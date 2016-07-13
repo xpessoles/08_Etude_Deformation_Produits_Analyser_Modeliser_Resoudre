@@ -1,0 +1,151 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={RdM : Diagrammes de sollicitations},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+    
+\input{style/new_style}
+\input{style/macros_SII}
+
+\usepackage{multicol}
+\usepackage{style/schemabloc}
+\fichetrue
+%\fichefalse
+
+\proftrue
+%\proffalse
+
+\tdtrue
+%\tdfalse
+
+%\courstrue
+\coursfalse
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\classe{PT -- PT$\star$}
+\def\xxnumpartie{Partie n}
+\def\xxpartie{Méthode de résolution permettant la détermination des déformations et des contraintes des pièces déformables\\
+Analyse, Modélisation, Résolution}
+
+\def\xxnumchapitre{Chapitre n}
+\def\xxchapitre{Titre Chapitre}
+
+\def\xxtitreexo{Exercices d'application -- Détermination du torseur de cohésion.}
+\def\xxsourceexo{\hspace{.2cm} D'après notes de cours PT -- Lycée G. Eiffel, Bordeaux.}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+\def\xxonglet{Part. 2 -- Ch. 2}
+
+\def\xxactivite{Applications}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+\noindent \textbf{Résoudre :} à partir des modèles retenus :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item ***
+\item ***
+\end{itemize}
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item ***
+\end{itemize}
+%
+%\noindent \textit{Mod2 -- C4.1 :} Représentation par schéma bloc.
+}}
+
+\def\xxfigures{
+\includegraphics[width=.8\textwidth]{images/rdm}
+}%figues de la page de garde
+
+\def\xxpied{%
+Partie 2 -- Découverte des SLCI -- Analyse, Modélisation, Résolution \\
+Ch. 2 : Modélisation des Systèmes Linéaires Continus Invariants -- Transformée de Laplace -- \xxactivite%
+}
+
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+
+\begin{document}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{8cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+\ifprof
+\else
+\begin{multicols}{2}
+\fi
+
+\section*{Exercice 1}
+\setcounter{subparagraph}{0}
+
+
+
+
+\begin{corrige}
+
+En conclusion, 
+$$
+\torseurscoh_{II \rightarrow I} 
++\left\{\mathcal{T}_{\text{Ext}\rightarrow I}\right\} 
++\left\{\mathcal{T}_{\text{Pression}\rightarrow I} \right\}  = \{0\}
+$$
+
+$$
+\torseurscoh_{II \rightarrow I}
+= 
+-\left\{\mathcal{T}_{\text{Ext}\rightarrow I}\right\} 
+-\left\{\mathcal{T}_{\text{Pression}\rightarrow I} \right\}  
+$$
+
+$$
+\torseurscoh_{II \rightarrow I}
+= 
+-\torseurl{ 
+ pR\left( \sin\theta \vect{e_r} + \cos\theta \vect{e_\theta} \right)}{
+pR^2 \left( 1- \cos \theta \right)\vect{z}} {P}
+-\torseurl{-pR \left(   \sin\theta \vect{e_r}  +\left( \cos\theta -1 \right) \vect{e_\theta}  \right) }{pR^2 \left( \cos\theta -1 \right) \vect{z} }{P} 
+$$
+
+
+
+$$
+\torseurscoh_{II \rightarrow I}
+= 
+\torseurl{ 
+ -pR\left( \sin\theta \vect{e_r} + \cos\theta \vect{e_\theta} \right) +pR \left(   \sin\theta \vect{e_r}  +\left( \cos\theta -1 \right) \vect{e_\theta}  \right) }{
+-pR^2 \left( 1- \cos \theta \right)\vect{z} - pR^2 \left( \cos\theta -1 \right) } {P}
+$$
+
+
+$$
+\torseurscoh_{II \rightarrow I}
+= 
+\torseurl{ 
+-pR  \vect{e_\theta}  }{
+\vect{0} } {P}
+$$
+
+\end{corrige}
+\else
+\fi
+
+
+\ifprof
+\else
+\end{multicols}
+\fi
+\end{document}
+
+

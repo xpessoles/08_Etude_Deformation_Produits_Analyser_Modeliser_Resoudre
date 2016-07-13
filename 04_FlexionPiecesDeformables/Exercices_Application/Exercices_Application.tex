@@ -1,0 +1,287 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={RdM : Diagrammes de sollicitations},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+    
+\input{style/new_style}
+\input{style/macros_SII}
+
+\usepackage{multicol}
+\usepackage{style/schemabloc}
+\fichetrue
+%\fichefalse
+
+\proftrue
+%\proffalse
+
+\tdtrue
+%\tdfalse
+
+%\courstrue
+\coursfalse
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\classe{PT -- PT$\star$}
+\def\xxnumpartie{Partie n}
+\def\xxpartie{Méthode de résolution permettant la détermination des déformations et des contraintes des pièces déformables\\
+Analyse, Modélisation, Résolution}
+
+\def\xxnumchapitre{Chapitre n}
+\def\xxchapitre{Titre Chapitre}
+
+\def\xxtitreexo{Exercices d'application}
+\def\xxsourceexo{\hspace{.2cm} D'après notes de cours PT -- Lycée G. Eiffel, Bordeaux.}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+\def\xxonglet{Part. 2 -- Ch. 2}
+
+\def\xxactivite{Applications}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+\noindent \textbf{Résoudre :} à partir des modèles retenus :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item ***
+\item ***
+\end{itemize}
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item ***
+\end{itemize}
+%
+%\noindent \textit{Mod2 -- C4.1 :} Représentation par schéma bloc.
+}}
+
+\def\xxfigures{
+\includegraphics[width=.8\textwidth]{images/rdm}
+}%figues de la page de garde
+
+\def\xxpied{%
+Partie 2 -- Découverte des SLCI -- Analyse, Modélisation, Résolution \\
+Ch. 2 : Modélisation des Systèmes Linéaires Continus Invariants -- Transformée de Laplace -- \xxactivite%
+}
+
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+
+\begin{document}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{10cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+%\begin{multicols}{2}
+
+\section*{Exercice 1 -- Calcul d'un moment quadratique}
+\setcounter{subparagraph}{0}
+On donne sur le schéma ci-dessous.
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/fig_01}
+\end{center}
+
+\subparagraph{}
+\textit{Déterminer $I_{G_\Sigma,\vect{z}}(x)$.}
+\ifprof
+\begin{corrige}
+$I_{G_\Sigma,\vect{z}}(x) = I_{Gz} = \iint y^2 \text{d}S$
+
+En coordonnées cartésiennes l'élément infinitésimal de surface se note $\text{d}S = \text{d}y \text{d}z$.
+
+
+\begin{eqnarray*}
+I_{Gz} &=& \iint y^2 \text{d}S =\iint y^2 \text{d}y\text{d}z  \\
+& = & 
+\int\limits_{-\pi}^{\pi}\int\limits_0^{R} \rho^2\cos^2\theta \rho \text{d}\rho \text{d}\theta \\
+&=& \int\limits_{-\pi}^{\pi}\int\limits_0^{R} \dfrac{1+\cos 2\theta}{2} \rho \text{d}\rho^3 \text{d}\theta  \\
+& = & \dfrac{1}{2} \int\limits_{-\pi}^{\pi} \left( 1+\cos 2\theta \right) \int\limits_0^{R} \rho^3 \text{d}\rho \text{d}\theta \\
+& = & \dfrac{1}{8}R^4 \int\limits_{-\pi}^{\pi} \left( 1+\cos 2\theta \right)  \text{d}\theta \\
+& = & \dfrac{1}{8}R^4 \left[\theta + \dfrac{1}{2} \sin 2\theta \right]_{-\pi}^{\pi} \\
+& = & \dfrac{1}{8}R^4 \left(\pi + \dfrac{1}{2} \sin 2\pi  - \left(-\pi+ \dfrac{1}{2} \sin \left(-2\pi\right)  \right) \right) \\
+& = & \dfrac{\pi R^4}{4} = \dfrac{\pi R^4}{4}=\dfrac{\pi D^4}{64}
+\end{eqnarray*}
+%
+%\begin{eqnarray*}
+%& = & \int \limits_{-R}^{R} \left[\int\limits_{-\sqrt{R^2-y^2}}^{\sqrt{R^2-y^2}} y^2 \text{d}z \right]\text{d}y \\%
+%I_{Gz} &=& \iint y^2 \text{d}S =\int \limits_{-R}^{R} \left[\int\limits_{-\sqrt{R^2-y^2}}^{\sqrt{R^2-y^2}} y^2 \text{d}z \right]\text{d}y \\
+%& = & \int \limits_{-R}^{R}  y^2  \left[ z\right] _{-\sqrt{R^2-y^2}}^{\sqrt{R^2-y^2}} \text{d}y  =\int \limits_{-R}^{R}  y^2  2\sqrt{R^2-y^2} \text{d}y  \\
+%\end{eqnarray*}
+%
+%On a d'une part $y=\rho \cos\theta$  et $z=\rho\sin\theta$. D'autre part, 
+%$\dfrac{\text{d}y}{\text{d}\theta}=-\rho \sin\theta$  et $\dfrac{\text{d}z}{\text{d}\theta}=\rho\cos\theta$.
+%On a donc $\text{d}y \text{d}z =-\rho^2 \sin\theta\cos\theta $
+\end{corrige}
+\else 
+\fi
+
+\newpage
+
+
+\section*{Exercice 2 -- Calcul de déformation}
+
+\setcounter{subparagraph}{0}
+On considère la poutre suivante soumise à une charge de densité linéique $p$ répartie uniformément :
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/fig_02}
+\end{center}
+\subparagraph{}\textit{Déterminer les actions mécaniques dans les liaisons.}
+\ifprof
+\begin{corrige}
+En utilisant le PFS, on montre que : $Y_A = Y_B = \dfrac{Lp}{2}$.
+\end{corrige}
+\else
+\fi
+
+
+
+\subparagraph{}\textit{Après avoir identifié les différentes parties et les différents tronçons, déterminer le torseur de cohésion.}
+\ifprof
+\begin{corrige}
+
+Cette poutre n'est constituée que d'une seule partie. 
+
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/fig_03}
+\end{center}
+
+On isole le tronçon $I$, on réalise le bilan des actions mécaniques et on applique le PFS : 
+$$
+\torseurscoh_{II \rightarrow I} + \left\{\mathcal{T}_{\text{Ext}\rightarrow I}\right\}  +\left\{\mathcal{T}_{\text{Pression}\rightarrow I} \right\}  
+= \{0\}
+$$
+
+Détermination de $ \left\{\mathcal{T}_{\text{Ext}\rightarrow I}\right\}$ :
+
+$\left\{\mathcal{T}_{\text{Ext}\rightarrow I}\right\} 
+= \torseurl{\vectf{\text{Ext}}{I}=\dfrac{Lp}{2}\vect{y}}{\vectm{A}{\text{Ext}}{I}=\vect{0}}{A}
+= \torseurl{\vectf{\text{Ext}}{I}=\dfrac{Lp}{2}\vect{y}}{\vectm{A}{\text{Ext}}{I}=-x\vect{x}\wedge \dfrac{Lp}{2}\vect{y} =- \dfrac{Lp}{2}x\vect{z} }{G} $
+
+
+Détermination de $ \left\{\mathcal{T}_{\text{Pression}\rightarrow I}\right\}$ :
+
+$\left\{\mathcal{T}_{\text{Pr}\rightarrow I}\right\} 
+= \torseurl{\vectf{\text{Pr}}{I}=-px\vect{y}}{\vectm{G}{\text{Pr}}{I}=\dfrac{1}{2}px^2 \vect{z}}{G}
+$
+
+Détermination de $ \left\{\mathcal{T}_{\text{II}\rightarrow I}\right\}$ :
+
+$
+\left\{\mathcal{T}_{\text{II}\rightarrow I}\right\} 
+= \torseurcol{N}{T_y}{T_z}{M_t}{M_{fy}}{M_{fz}}{G}
+=  \torseurcol{0}{-\dfrac{Lp}{2}+px}{0}{0}{0}{\dfrac{Lp}{2}x-\dfrac{1}{2}px^2  }{G}
+$
+
+
+\end{corrige}
+\else
+\fi
+
+
+\subparagraph{}\textit{Tracer les diagrammes des sollicitations.}
+\ifprof
+\begin{corrige}
+~\\
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/fig_04}
+\end{center}
+
+\end{corrige}
+\else
+\fi
+
+
+\subparagraph{}\textit{Rechercher l'équation de déformation de la poutre ainsi que la flèche maximale.}
+\ifprof
+\begin{corrige}
+L'équation de la déformée $y$ est donnée par : $EI_{Gz} y''(x)= M_{fz}(x)$. 
+
+On a donc :
+
+$
+EI_{Gz} y''(x)= M_{fz}(x) 
+\Leftrightarrow  EI_{Gz} y''(x)= \dfrac{Lp}{2}x-\dfrac{1}{2}px^2 
+\Rightarrow  EI_{Gz} y'(x)= \dfrac{Lp}{2}\dfrac{1}{2}x^2 -\dfrac{1}{2}p\dfrac{1}{3}x^3$
+
+$ \Rightarrow  EI_{Gz} y'(x)= \dfrac{Lp}{4}x^2 -\dfrac{1}{6}px^3 + v_0 $
+
+$ \Rightarrow  EI_{Gz} y(x)= \dfrac{Lp}{12}x^3 -\dfrac{1}{24}px^4  + v_0 x +y_0$
+
+Par ailleurs, la poutre étant en appui en $A$ et $B$, on a : $y(0) = 0$ et $y(L) = 0$.
+En conséquences : 
+$$
+\left\{ 
+\begin{array}{l}
+0 = y_0 \\
+0= \dfrac{Lp}{12}L^3 -\dfrac{1}{24}pL^4  + v_0 L +y_0
+\end{array}
+\right.
+\Longleftrightarrow
+\left\{ 
+\begin{array}{l}
+y_0 = 0 \\
+0= \dfrac{p}{12}L^3 -\dfrac{1}{24}pL^3  + v_0 
+\end{array}
+\right.
+\Longleftrightarrow
+\left\{ 
+\begin{array}{l}
+y_0 = 0 \\
+ v_0 = -\dfrac{p}{12}L^3 +\dfrac{1}{24}pL^3 =-\dfrac{pL^3}{24} 
+\end{array}
+\right.
+$$
+
+
+On a donc : 
+$$
+\left\{ 
+\begin{array}{l}
+  EI_{Gz} y'(x)= \dfrac{Lp}{4}x^2 -\dfrac{1}{6}px^3 -\dfrac{pL^3}{24} \\
+  EI_{Gz} y(x)= \dfrac{Lp}{12}x^3 -\dfrac{1}{24}px^4  -\dfrac{pL^3}{24} x 
+\end{array}
+\right.
+$$
+La déformée maximale est atteinte lorsque la dérivée de la déformée est nulle :
+$
+  EI_{Gz} y'(x)= \dfrac{Lp}{4}x^2 -\dfrac{1}{6}px^3 -\dfrac{pL^3}{24}  = 0
+$
+
+Lorsque $x=L/2$, on a : -$y_{\text{max}}=-\dfrac{5}{384} \cdot \dfrac{pL^4}{EI}$
+
+\end{corrige}
+\else
+\fi
+
+
+
+\subparagraph{}\textit{Donner un modèle équivalent qui aurait pu être utilisé pour réaliser les calculs. }
+\ifprof
+\begin{corrige}
+~\\
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/fig_05}
+\end{center}
+\end{corrige}
+\else
+\fi
+
+
+
+
+%\end{multicols}
+
+\end{document}
+
+
