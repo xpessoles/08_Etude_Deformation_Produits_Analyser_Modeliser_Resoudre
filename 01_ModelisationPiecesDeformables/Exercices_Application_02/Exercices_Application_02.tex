@@ -85,15 +85,18 @@ Ch. 2 : Modélisation des Systèmes Linéaires Continus Invariants -- Transform�
 
 \def\columnseprulecolor{\color{ocre}}
 \setlength{\columnseprule}{0.4pt} 
-\ifprof
-\else
+%\ifprof
+%\else
 \begin{multicols}{2}
-\fi
+%\fi
 
 \section*{Exercice 1}
 \setcounter{subparagraph}{0}
 On considère un ressort de diamètre moyen  $D=\SI{10}{mm}$, de diamètre de fil $d=\si{1}{mm}$, de longueur libre $L_0 = \SI{17,5}{mm}$ de longueur $L_c =\SI{5,55}{mm}$ lorsque les spires sont jointives.  
+
+\begin{center}
 \includegraphics[width=6cm]{images/ressort_01}
+\end{center}
 
 \subparagraph{}\textit{Exprimer le torseur de cohésion en tout point du ressort.}
 
@@ -101,26 +104,30 @@ On considère un ressort de diamètre moyen  $D=\SI{10}{mm}$, de diamètre de fi
 \begin{corrige}~\\
 
 On isole le tronçon $I$, soumis aux actions du torseur de cohésion et de l'effort en $A$. 
-On a donc , 
-$$
+On a donc  :
+
+
+$
 \torseurscoh_{II \rightarrow I} 
 +\left\{\mathcal{F}_{\text{Ext}\rightarrow I}\right\}   = \{0\} 
 \Leftrightarrow 
 \torseurscoh_{II \rightarrow I} 
 = - \left\{\mathcal{F}_{\text{Ext}\rightarrow I}\right\} 
 = - \torseurcol{0}{F}{0}{0}{0}{0}{A,\mathcal{R}}
+\Leftrightarrow 
+\torseurscoh_{II \rightarrow I} 
 = \torseurcol{ -F \sin \alpha }{-F \cos \alpha }{0}{\dfrac{FD}{2}\cos\alpha}{-\dfrac{FD}{2}\sin\alpha}{0}{G,\mathcal{R}_s}
-$$
+$.
 
-car :
+En effet, 
 
-$$
+$
 \vectm{G}{\text{Ext}}{I} 
 = \vectm{A}{\text{Ext}}{I} +\vect{GA} \wedge \vectf{\text{Ext}}{I}
 = \left(-h \vect{y} +\dfrac{D}{2}\vect{z} \right) \wedge F \vect{y}
 = -\dfrac{FD}{2}\vect{x}
 = -\dfrac{FD}{2}\left(\cos\alpha \vect{x_s} - \sin\alpha \vect{y_s} \right)
-$$
+$.
 
 Le ressort est donc soumis à de la traction -- compression, à des effort tranchants, à un moment de torsion et à un moment de flexion.
 
@@ -128,20 +135,45 @@ Le ressort est donc soumis à de la traction -- compression, à des effort tranc
 \else
 \fi
 
-\subparagraph{}\textit{Déterminer l'expression des contraintes de cisaillement et des contraintes de cisaillement et de torsion. Quelle contrainte semble prédominante ? Justifier.}
+\subparagraph{}\textit{Déterminer l'expression des contraintes de cisaillement et des contraintes de cisaillement et de torsion. En déduire la contrainte semblant prédominante et donc la sollicitation prédominante.}
 
+\ifprof
+\begin{corrige}~\\
+On exprime la contrainte de cisaillement de façon suivante : $\tau_c = \dfrac{T_y}{S}$ avec $T_y$ l'effort tranchant et $S$ la section d'une spire. D'où 
+$
+\tau_c = \dfrac{T_y}{S} = \dfrac{-F \cos \alpha }{\pi d^2 /4} = \dfrac{- 4 F \cos \alpha }{\pi d^2} 
+$.
 
-\subparagraph{}\textit{Quelle hypothèse permettrait de justifier qu'un ressort n'est soumis qu'à de la torsion.}
+On exprime la contrainte de torsion de la façon suivante : 
+$\tau_t = \dfrac{\rho M_t}{I_G}$ avec $M_t$ le moment de torsion et $I_G=\int\limits_S \rho^2 \text{d}S$ le moment quadratique de la section. Pour une section circulaire on a $I_G = \dfrac{\pi d^4}{32}$. 
+
+En conséquence, 
+$\tau_t = \dfrac{\rho M_t}{I_G}
+=\dfrac{16 \rho FD\cos\alpha}{\pi d^4}
+=\dfrac{8  FD\cos\alpha}{\pi d^3}
+$ (avec $\rho=\dfrac{d}{2}$).
+
+On a alors : 
+$\dfrac{\tau_t}{\tau_c}
+=\dfrac{\dfrac{8  FD\cos\alpha}{\pi d^3}}{\dfrac{- 4 F \cos \alpha }{\pi d^2}}
+=\dfrac{-2  D}{ d}
+$.
+
+Application numérique : $\dfrac{\tau_t}{\tau_c}=-20$. La contrainte de torsion est donc 20 fois plus importante que la contrainte de cisaillement. On néglige donc les effets dûs au cisaillement. 
+
+\end{corrige}
+\else
+\fi
 
 
 \subparagraph{}\textit{Déterminer la flèche d'un tronçon de longueur $\Delta L$. En déduire la flèche totale.}
 
 
 \subparagraph{}\textit{En déduire la raideur (rigidité ?) du ressort.}
-\ifprof
-\else
+%\ifprof
+%\else
 \end{multicols}
-\fi
+%\fi
 \end{document}
 
 
