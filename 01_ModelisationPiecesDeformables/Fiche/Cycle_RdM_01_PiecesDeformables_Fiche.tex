@@ -182,9 +182,27 @@ On peut montrer qu'en un point $G$ d'abscisse $x$:
 \end{rem}
 
 \section{Méthode : détermination des diagrammes des sollicitations}
+\begin{enumerate}
+\item Modélisation du problème : le problème étant donné, il est nécessaire de réaliser un modèle paramétré (schéma cinématique, paramétrage, modélisation des actions mécaniques). 
+\item Résolution des actions mécaniques dans les liaisons grâce au PFS. 
+\item Découpage de la poutre en tronçons (un nouveau tronçon correspondant à une discontinuité géométrique -- discontinuité de la ligne moyenne -- ou à une discontinuité en effort -- nouvelle charge, répartie ou non, liaison--).
+\item Résolution du PFS dans le but de déterminer les torseurs de cohésion.
+\item Tracer des diagrammes des sollicitations.
+\end{enumerate}
 
-
-
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Traction & Torsion & Cisaillement \\
+\hline
+\hline
+Flexion pure & Flexion simple & Flexion + Traction \\
+\hline
+\hline
+Flexion + Torsion & Flambage & Flexion déviée \\
+\hline
+\end{tabular}
+\end{center}
 
 \end{document}
 
