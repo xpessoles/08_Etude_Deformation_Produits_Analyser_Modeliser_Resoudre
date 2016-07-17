@@ -108,17 +108,80 @@ Lors de la déformation d'une poutre droite, on fait l'hypothèse que le déplac
 \includegraphics[width=\linewidth]{images/navier}
 \end{center}
 \end{minipage}
-
 \end{hypo}
 
 \begin{hypo}
 \textbf{Hypothèse des petits déplacements :} les déplacements petits devront rester petits devant les dimensions de la poutre. 
 \end{hypo}
 
+
 \section{Torseur de cohésion et sollicitations}
 
+\begin{hypo}
+\textbf{Hypothèse de Barré -- Saint Venant :}  ~\\
+En s'éloignant suffisant des zones où sont concentrés les efforts, les contraintes et déformations ne dépendent que du torseur de cohésion. 
+\end{hypo}
 
-\section{Méthode}
+
+\begin{defi}
+\textbf{Torseur de cohésion :} ~\\
+
+Sous une action mécanique extérieure à une poutre, des actions intérieures assurent sa cohésion. Ces actions internes sont modélisées par le torseur de cohésion. 
+
+En subdivisant la poutre en deux tronçons notés $I$ et $II$, puis en isolant la partie $I$, cette dernière est alors soumise aux actions mécaniques de cohésions du tronçon $II$ sur le tronçon $I$ ainsi qu'aux actions mécaniques extérieures. D'après le PFS appliqué à la poutre on a alors :
+$\torseurstat{T}{\text{Ext}}{I}+\torseurstat{T}{II}{I} = \left\{0\right\} \Leftrightarrow 
+\torseurstat{T}{II}{I} = - \torseurstat{T}{\text{Ext}}{I}$. 
+
+\begin{minipage}[c]{.65\linewidth}
+
+\textbf{Par convention, le torseur de cohésion s'exprime au point $G$ et représente l'action du tronçon $II$ sur le tronçon $I$.} On le notera : $\mathcal{T}_{\text{coh}}$.
+
+\end{minipage} \hfill
+\begin{minipage}[c]{.3\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{images/cohesion}
+\end{center}
+\end{minipage}
+
+\end{defi}
+
+
+
+\begin{defi}
+\textbf{Sollicitations:} ~\\
+
+\begin{minipage}[c]{.65\linewidth}
+On a : 
+$$
+\mathcal{T}_{\text{coh}} = \torseurcol{N}{T_y}{T_z}{M_t}{M_{fy}}{M_{fz}}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$$
+\end{minipage} \hfill
+\begin{minipage}[c]{.3\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{images/sollicitations}
+\end{center}
+\end{minipage}
+
+On appelle :
+\begin{itemize}
+\item $N$ : l'effort normal, induisant un allongement ou un raccourcissement de la poutre;
+\item $T_y$ et $T_z$ : les efforts tranchants suivant $\vy{}$ ou $\vz{}$, induisant un glissement des sections;
+\item $M_{t}$ : le moment de torsion, induisant un glissement des sections; 
+\item $M_{fy}$ et $M_{fz}$ : les moments de flexion autour de $\vy{}$ ou $\vz{}$, induisant une modification de la courbure de la poutre.
+\end{itemize}
+
+\end{defi}
+
+
+\begin{rem}
+On peut montrer qu'en un point $G$ d'abscisse $x$:
+\begin{itemize}
+\item la dérivée de l'effort tranchant est égale à la charge élémentaire appliquée en ce point;
+\item la dérivée du moment de flexion est égale à l'opposé de l'effort tranchant en ce point : $\dfrac{\text{d}M_{fz}(x)}{\text{d}t}=-T_y(x)$.
+\end{itemize}
+\end{rem}
+
+\section{Méthode : détermination des diagrammes des sollicitations}
 
 
 
