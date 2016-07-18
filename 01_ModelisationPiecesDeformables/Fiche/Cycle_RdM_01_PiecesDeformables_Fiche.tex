@@ -193,13 +193,46 @@ On peut montrer qu'en un point $G$ d'abscisse $x$:
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-Traction & Torsion & Cisaillement \\
+\textbf{Traction} & \textbf{Torsion} & \textbf{Cisaillement} \\
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{N}{0}{0}{0}{0}{0}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$
+&
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{0}{0}{0}{M_t}{0}{0}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$
+&
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{0}{T_y}{T_z}{0}{0}{0}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$ \\
 \hline
 \hline
-Flexion pure & Flexion simple & Flexion + Traction \\
+\textbf{Flexion pure} & \textbf{Flexion simple} & \textbf{Flexion + Traction} \\
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{0}{0}{0}{0}{0}{M_{fz}}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$
+&
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{0}{T_y}{0}{0}{0}{M_{fz}}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$
+&
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{N}{T_y}{0}{0}{0}{M_{fz}}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$ \\
 \hline
 \hline
-Flexion + Torsion & Flambage & Flexion déviée \\
+\textbf{Flexion + Torsion} & \textbf{Flambage} & \textbf{Flexion déviée} \\
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{0}{T_y}{0}{M_t}{0}{M_{fz}}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$
+&
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{N}{0}{0}{0}{0}{M_{fz}}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$
+&
+$
+\mathcal{T}_{\text{coh}} = \torseurcol{0}{T_y}{T_z}{0}{M_{fy}}{M_{fz}}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$ \\
 \hline
 \end{tabular}
 \end{center}
