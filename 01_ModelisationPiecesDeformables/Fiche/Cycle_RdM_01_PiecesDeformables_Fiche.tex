@@ -188,6 +188,7 @@ On peut montrer qu'en un point $G$ d'abscisse $x$:
 \item Découpage de la poutre en tronçons (un nouveau tronçon correspondant à une discontinuité géométrique -- discontinuité de la ligne moyenne -- ou à une discontinuité en effort -- nouvelle charge, répartie ou non, liaison--).
 \item Résolution du PFS dans le but de déterminer les torseurs de cohésion.
 \item Tracer des diagrammes des sollicitations.
+\item Vérifier que $\dfrac{\text{d}M_{fz}(x)}{\text{d}t}=-T_y(x)$.
 \end{enumerate}
 
 \begin{center}
@@ -236,6 +237,17 @@ $ \\
 \hline
 \end{tabular}
 \end{center}
+
+\section{Notions de contraintes et déformations}
+$$
+\mathcal{T}_{\text{coh}} 
+= \torseurl{N\vx{}+T_y\vy{}+T_z\vz{}}{M_t\vx{}+M_{fy}\vy{}+M_{fz}\vz{}}{G,\left(\vx{}, \vy{}, \vz{} \right)}
+= \torseurl{\int\limits_S \vect{C}\left(M,\vect{x_S}\right) dS}{\int\limits_S \vect{GM} \wedge \vect{C}\left(M,\vect{x_S}\right) dS}{G,\left(\vx{}, \vy{}, \vz{} \right)}
+$$
+$$
+= \torseurl{\int\limits_S \left( \sigma (M) \vect{x_S} + \vect{\tau(M)}  \right) dS}{\int\limits_S \vect{GM} \wedge \vect{C}\left(M,\vect{x_S}\right) dS}{G,\left(\vx{}, \vy{}, \vz{} \right)}
+= \torseurl{\int\limits_S \left( \sigma (M) \vect{x_S} + \tau_y \vect{y_S} + \tau_z \vect{z_S}  \right) dS}{\int\limits_S \vect{GM} \wedge \vect{C}\left(M,\vect{x_S}\right) dS}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$$
 
 \end{document}
 
