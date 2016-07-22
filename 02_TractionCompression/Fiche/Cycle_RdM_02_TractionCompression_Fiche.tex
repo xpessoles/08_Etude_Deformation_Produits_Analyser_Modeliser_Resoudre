@@ -67,21 +67,79 @@ Compression traction -- \xxactivite%
 \thispagestyle{plain}
 
 \section{Définitions}
-\begin{defi}~\\
-\textbf{Torseur des sollicitations}
+\begin{defi} -- \textbf{Torseur des sollicitations}  ~\\
+
+\begin{minipage}[c]{.65\linewidth}
+Pour une sollicitation en compression ou torsion, le torseur de cohésion est de la forme : 
+$
+\{\mathcal{T}_{\text{coh}}\} = \torseurcol{N}{0}{0}{0}{0}{0}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
+$
+Si $F$ est positif, la sollicitation est de la traction. Si $F$ est négatif la sollicitation est de la compression.
+\end{minipage} \hfill
+\begin{minipage}[c]{.3\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{images/traction}
+\end{center}
+\end{minipage}
+
+
+
 \end{defi}
 
-\begin{defi}~\\
-\textbf{Contrainte et déformations longitudinales}
+\begin{defi} -- 
+\textbf{Contrainte et déformations longitudinales} ~\\
+\begin{minipage}[c]{.7\linewidth}
+En traction -- compression, la contrainte est homogène en chaque section de la poutre : 
+$$ \sigma = \dfrac{F}{S}
+\quad 
+\text{avec}
+\begin{array}{ll}
+\sigma &\text{contrainte en \text{MPa}},\\
+F &\text{effort en N et} \\
+S &\text{section en mm}^2.
+\end{array}
+$$
+La déformation longitudinale s'exprime suivant le sens de traction et on a :
+$$
+\varepsilon = \dfrac{\Delta L}{L_0} = \dfrac{L-L_0}{L_0}
+\quad 
+\text{avec}
+\begin{array}{ll}
+\varepsilon &\text{déformation sans dimension,}\\
+\Delta L &\text{allongement en \text{mm},} \\
+L_0 &\text{longueur initiale en mm et} \\
+L &\text{longueur finale en mm.} \\
+\end{array}
+$$
+\end{minipage} \hfill
+\begin{minipage}[c]{.25\linewidth}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/contrainte_traction}
+\end{center}
+\end{minipage}
 \end{defi}
 
 
-\begin{resultat}~\\
-\textbf{Loi de comportement}
+\begin{resultat}
+\textbf{Loi de comportement -- Loi de Hooke} ~\\
+Lorsqu'un matériau est sollicité dans un domaine élastique, contrainte et déformation sont liées par la loi de Hooke : 
+$$ \sigma = E \varepsilon
+\quad 
+\text{avec}
+\begin{array}{ll}
+\sigma &\text{contrainte en \text{MPa}},\\
+\varepsilon &\text{déformation sans dimension,}\\
+E &\text{module de Young en MPa (N}\cdot\text{mm}^2\text{).}
+\end{array}
+$$
 \end{resultat}
 
-\begin{resultat}~\\
-\textbf{Déformations transversales}
+\begin{resultat} -- \textbf{Déformations transversales} ~\\
+En traction, la déformation la plus importante est suivant la direction de l'effort. Cependant, cet allongement s'accompagne d'un rétrécissement de la section. Le coefficient de Poisson est défini par (on considère que la direction de traction est suivant $\vect{x}$): 
+$$
+\nu = \dfrac{\varepsilon_y}{\varepsilon_x} = \dfrac{\varepsilon_z}{\varepsilon_x} \simeq 0,3.
+$$
+
 \end{resultat}
 
 
