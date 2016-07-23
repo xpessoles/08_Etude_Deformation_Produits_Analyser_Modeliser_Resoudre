@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  23 JUL 2016 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  23 JUL 2016 17:05
 entering extended mode
-**Cycle_RdM_02_TractionCompression_Fiche.tex
-(Cycle_RdM_02_TractionCompression_Fiche.tex
+**Cycle_RdM_03_Torsion_Fiche.tex
+(Cycle_RdM_03_Torsion_Fiche.tex
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9l> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -1233,7 +1233,7 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write5
 
-Writing index file Cycle_RdM_02_TractionCompression_Fiche.idx
+Writing index file Cycle_RdM_03_Torsion_Fiche.idx
 ("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titletoc.sty"
 Package: titletoc 2011/12/15 v1.6 TOC entries
 \ttl@leftsep=\dimen195
@@ -1858,7 +1858,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count373
 \@quotereset=\count374
-(Cycle_RdM_02_TractionCompression_Fiche.aux)
+(Cycle_RdM_03_Torsion_Fiche.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
@@ -1979,10 +1979,9 @@ Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Cycle_RdM_02_TractionCompression_Fiche.bbl' no
-t found.
+Package biblatex Info: ... file 'Cycle_RdM_03_Torsion_Fiche.bbl' not found.
 
-No file Cycle_RdM_02_TractionCompression_Fiche.bbl.
+No file Cycle_RdM_03_Torsion_Fiche.bbl.
 Package biblatex Info: Reference section=0 on input line 62.
 Package biblatex Info: Reference segment=0 on input line 62.
 \c@lstlisting=\count382
@@ -2190,37 +2189,36 @@ LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 75.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
 (Font)              scaled to size 4.59999pt on input line 75.
-<images/traction.png, id=6, 654.445pt x 185.69376pt>
-File: images/traction.png Graphic file (type png)
- <use images/traction.png>
-Package pdftex.def Info: images/traction.png used on input line 81.
-(pdftex.def)             Requested size: 140.91049pt x 39.98004pt.
+<images/torsion.png, id=6, 743.77875pt x 480.79625pt>
+File: images/torsion.png Graphic file (type png)
+ <use images/torsion.png>
+Package pdftex.def Info: images/torsion.png used on input line 79.
+(pdftex.def)             Requested size: 140.91049pt x 91.08812pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 89.
+(mdframed)              on input line 87.
 
-<images/contrainte_traction.png, id=8, 380.42125pt x 248.93pt>
-File: images/contrainte_traction.png Graphic file (type png)
+<images/contrainte_torsion.png, id=8, 298.11375pt x 314.17375pt>
+File: images/contrainte_torsion.png Graphic file (type png)
 
-<use images/contrainte_traction.png>
-Package pdftex.def Info: images/contrainte_traction.png used on input line 117.
-
-(pdftex.def)             Requested size: 105.68106pt x 69.15295pt.
+<use images/contrainte_torsion.png>
+Package pdftex.def Info: images/contrainte_torsion.png used on input line 127.
+(pdftex.def)             Requested size: 105.68106pt x 111.37186pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 123.
+(mdframed)              on input line 133.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 137.
+(mdframed)              on input line 147.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 146.
+(mdframed)              on input line 156.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--148
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+mdput on input line 14
+LaTeX Font Info:    Try loading font information for TS1+mdput on input line 15
 8.
 
 (C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
@@ -2228,39 +2226,39 @@ design\mdput\ts1mdput.fd
 File: ts1mdput.fd 2006/01/29 Fontinst v1.928 font definitions for TS1/mdput.
 )
 LaTeX Font Info:    Font shape `TS1/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 148.
+(Font)              scaled to size 9.19998pt on input line 158.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `mdput' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 159.
+(Font)              scaled to size 7.35999pt on input line 169.
 LaTeX Font Info:    Font shape `T1/mdput/m/sl' will be
-(Font)              scaled to size 7.35999pt on input line 159.
+(Font)              scaled to size 7.35999pt on input line 169.
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <8> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 7.35999pt on input line 159.
+(Font)              scaled to size 7.35999pt on input line 169.
  [1
 
 {C:/Users/Xavier/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/t
-raction.png> <./images/contrainte_traction.png>]
-<images/essai_traction.png, id=32, 1441.385pt x 481.8pt>
+orsion.png> <./images/contrainte_torsion.png>]
+<images/essai_traction.png, id=33, 1441.385pt x 481.8pt>
 File: images/essai_traction.png Graphic file (type png)
 
 <use images/essai_traction.png>
-Package pdftex.def Info: images/essai_traction.png used on input line 165.
+Package pdftex.def Info: images/essai_traction.png used on input line 175.
 (pdftex.def)             Requested size: 483.69687pt x 161.67784pt.
 
-<png/logo_lycee.png, id=33, 329.23pt x 265.99374pt>
+<png/logo_lycee.png, id=34, 329.23pt x 265.99374pt>
 File: png/logo_lycee.png Graphic file (type png)
  <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png used on input line 170.
+Package pdftex.def Info: png/logo_lycee.png used on input line 180.
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
 LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
-(Font)              scaled to size 7.35999pt on input line 170.
+(Font)              scaled to size 7.35999pt on input line 180.
 LaTeX Font Info:    Font shape `T1/pag/m/it' in size <8> not available
-(Font)              Font shape `T1/pag/m/sl' tried instead on input line 170.
+(Font)              Font shape `T1/pag/m/sl' tried instead on input line 180.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2269,45 +2267,44 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2 <./png/logo_lycee.png> <./images/essai_traction.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 
-(Cycle_RdM_02_TractionCompression_Fiche.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
+(Cycle_RdM_03_Torsion_Fiche.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 180.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package logreq Info: Writing requests to 'Cycle_RdM_02_TractionCompression_Fich
-e.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
+Package logreq Info: Writing requests to 'Cycle_RdM_03_Torsion_Fiche.run.xml'.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 36731 strings out of 493675
- 667960 string characters out of 3143992
- 1248993 words of memory out of 3000000
- 39394 multiletter control sequences out of 15000+200000
- 161892 words of font info for 168 fonts, out of 3000000 for 9000
+ 36717 strings out of 493675
+ 667640 string characters out of 3143992
+ 1248917 words of memory out of 3000000
+ 39392 multiletter control sequences out of 15000+200000
+ 161081 words of font info for 159 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 57i,19n,79p,10451b,1931s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,18n,79p,10439b,1931s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Program File
 s/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}<C:/Enseignement/Livre_Exo_V
 uibert/Installation/MATHDESIGN/texmf/fonts/type1/mathdesign/mdput/md-utr7t.pfb>
 <C:/Enseignement/Livre_Exo_Vuibert/Installation/MATHDESIGN/texmf/fonts/type1/ma
 thdesign/mdput/md-utr7v.pfb><C:/Enseignement/Livre_Exo_Vuibert/Installation/MAT
 HDESIGN/texmf/fonts/type1/mathdesign/mdput/md-utr7y.pfb><C:/Enseignement/Livre_
-Exo_Vuibert/Installation/MATHDESIGN/texmf/fonts/type1/mathdesign/mdput/md-utri7
-m.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/adobe/utopia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avan
-tgar/uagd8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagko8a.p
-fb>
-Output written on Cycle_RdM_02_TractionCompression_Fiche.pdf (2 pages, 302511 b
-ytes).
+Exo_Vuibert/Installation/MATHDESIGN/texmf/fonts/type1/mathdesign/mdput/md-utr8t
+.pfb><C:/Enseignement/Livre_Exo_Vuibert/Installation/MATHDESIGN/texmf/fonts/typ
+e1/mathdesign/mdput/md-utri7m.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adob
+e/utopia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/avantgar/uagko8a.pfb>
+Output written on Cycle_RdM_03_Torsion_Fiche.pdf (2 pages, 339567 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  11 named destinations out of 1000 (max. 500000)
  47665 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -1,6 +1,6 @@
 \documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
 \usepackage[%
-    pdftitle={Résistance des matériaux : Modélisation des pièces déformables - Compression traction},
+    pdftitle={Résistance des matériaux : Modélisation des pièces déformables - Torsion},
     pdfauthor={Xavier Pessoles}]{hyperref}
 
 \input{style/new_style}
@@ -30,7 +30,7 @@
 \def\xxpartie{Résistance des matériaux}
 
 \def\xxnumchapitre{Chapitre 2}
-\def\xxchapitre{\hspace{.12cm} Modélisation des pièces déformables en compression traction}
+\def\xxchapitre{\hspace{.12cm} Modélisation des pièces déformables en torsion}
 
 \def\xxposongletx{2}
 \def\xxposonglettext{1.45}
@@ -52,7 +52,7 @@
 
 \def\xxpied{%
 Cycle RdM -- Modélisation des pièces déformables\\
-Compression traction -- \xxactivite%
+Torsion -- \xxactivite%
 }
 
 \setcounter{secnumdepth}{5}
@@ -70,15 +70,13 @@ Compression traction -- \xxactivite%
 \begin{defi} -- \textbf{Torseur des sollicitations}  ~\\
 
 \begin{minipage}[c]{.65\linewidth}
-Pour une sollicitation en compression ou torsion, le torseur de cohésion est de la forme : 
-$
-\{\mathcal{T}_{\text{coh}}\} = \torseurcol{N}{0}{0}{0}{0}{0}{G,\left(\vx{}, \vy{}, \vz{} \right)}.
-$
-Si $F$ est positif, la sollicitation est de la traction. Si $F$ est négatif la sollicitation est de la compression.
+Pour une sollicitation en torsion, le torseur de cohésion est de la forme : 
+$$
+\{\mathcal{T}_{\text{coh}}\} = \torseurcol{0}{0}{0}{M_t}{0}{0}{G,\left(\vx{}, \vy{}, \vz{} \right)}.$$
 \end{minipage} \hfill
 \begin{minipage}[c]{.3\linewidth}
 \begin{center}
-\includegraphics[width=\linewidth]{images/traction}
+\includegraphics[width=\linewidth]{images/torsion}
 \end{center}
 \end{minipage}
 
@@ -89,32 +87,44 @@ Si $F$ est positif, la sollicitation est de la traction. Si $F$ est négatif la 
 \begin{defi} -- 
 \textbf{Contrainte et déformations longitudinales} ~\\
 \begin{minipage}[c]{.7\linewidth}
-En traction -- compression, la contrainte est homogène en chaque section de la poutre : 
-$$ \sigma = \dfrac{F}{S}
+En torsion, la contrainte est uniquement tangentielle et dépend de la position radiale dans la section: 
+$$ \tau = \dfrac{M_t}{I_{0}}r
 \quad 
 \text{avec}
 \begin{array}{ll}
-\sigma &\text{contrainte en \text{MPa}},\\
-F &\text{effort en N et} \\
-S &\text{section en mm}^2.
+\tau &\text{contrainte tangentielle en \text{MPa},}\\
+M_t &\text{moment de torsion en Nm,} \\
+I_{0} &\text{moment quadratique polaire en mm}^4 \text{ et} \\
+r &\text{rayon en mm.}
 \end{array}
 $$
-La déformation longitudinale s'exprime suivant le sens de traction et on a :
+L'angle unitaire de torsion est défini par 
 $$
-\varepsilon = \dfrac{\Delta L}{L_0} = \dfrac{L-L_0}{L_0}
+\theta(x) = \dfrac{\text{d} \varphi}{\text{d} x} 
 \quad 
 \text{avec}
 \begin{array}{ll}
-\varepsilon &\text{déformation sans dimension,}\\
-\Delta L &\text{allongement en \text{mm},} \\
-L_0 &\text{longueur initiale en mm et} \\
-L &\text{longueur finale en mm.} \\
+\theta &\text{angle unitaire de torsion en rad/m,}\\
+\text{d} \varphi &\text{} \\
+\text{d} x &\text{.} \\
+\end{array}
+$$
+
+La déformation est définie par : 
+$$
+\gamma = r \dfrac{\text{d} \varphi}{\text{d} x} = r\theta  
+\quad 
+\text{avec}
+\begin{array}{ll}
+\theta &\text{angle unitaire de torsion en rad/m,}\\
+\text{d} \varphi &\text{} \\
+\text{d} x &\text{.} \\
 \end{array}
 $$
 \end{minipage} \hfill
 \begin{minipage}[c]{.25\linewidth}
 \begin{center}
-\includegraphics[width=.9\linewidth]{images/contrainte_traction}
+\includegraphics[width=.9\linewidth]{images/contrainte_torsion}
 \end{center}
 \end{minipage}
 \end{defi}
@@ -123,7 +133,7 @@ $$
 \begin{resultat}
 \textbf{Loi de comportement -- Loi de Hooke} ~\\
 Lorsqu'un matériau est sollicité dans un domaine élastique, contrainte et déformation sont liées par la loi de Hooke : 
-$$ \sigma = E \varepsilon
+$$ \tau = G \gamma
 \quad 
 \text{avec}
 \begin{array}{ll}
