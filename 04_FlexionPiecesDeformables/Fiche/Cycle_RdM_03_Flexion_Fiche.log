@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  24 JUL 2016 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  24 JUL 2016 20:56
 entering extended mode
 **Cycle_RdM_03_Flexion_Fiche.tex
 (Cycle_RdM_03_Flexion_Fiche.tex
@@ -1331,11 +1331,12 @@ Package: amsthm 2015/03/04 v2.20.2
 \c@sqlT=\count316
 \c@vocabulary=\count317
 \c@definitionT=\count318
-\c@rappelT=\count319
-\c@demoT=\count320
-\c@hypoT=\count321
-\c@titrepartieT=\count322
-\c@titrechapitreT=\count323
+\c@propT=\count319
+\c@rappelT=\count320
+\c@demoT=\count321
+\c@hypoT=\count322
+\c@titrepartieT=\count323
+\c@titrechapitreT=\count324
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mdframed\mdframed.sty"
 Package: mdframed 2013/07/01 1.9b: mdframed
@@ -1354,24 +1355,24 @@ L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
 L3 Module: l3str 2015/03/01 v5545 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
 L3 Module: l3int 2015/02/21 v5529 L3 Integers
-\c_max_int=\count324
-\l_tmpa_int=\count325
-\l_tmpb_int=\count326
-\g_tmpa_int=\count327
-\g_tmpb_int=\count328
+\c_max_int=\count325
+\l_tmpa_int=\count326
+\l_tmpb_int=\count327
+\g_tmpa_int=\count328
+\g_tmpb_int=\count329
 L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
 L3 Module: l3prg 2015/04/13 v5566 L3 Control structures
-\g__prg_map_int=\count329
+\g__prg_map_int=\count330
 L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
 L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
 L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
 L3 Module: l3msg 2015/02/26 v5537 L3 Messages
 L3 Module: l3file 2015/06/07 v5627 L3 File and I/O operations
-\l_iow_line_count_int=\count330
-\l__iow_target_count_int=\count331
-\l__iow_current_line_int=\count332
-\l__iow_current_word_int=\count333
-\l__iow_current_indentation_int=\count334
+\l_iow_line_count_int=\count331
+\l__iow_target_count_int=\count332
+\l__iow_current_line_int=\count333
+\l__iow_current_word_int=\count334
+\l__iow_current_indentation_int=\count335
 L3 Module: l3skip 2015/05/18 v5607 L3 Dimensions and skips
 \c_zero_dim=\dimen205
 \c_max_dim=\dimen206
@@ -1392,18 +1393,18 @@ L3 Module: l3skip 2015/05/18 v5607 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/06/14 v5629 L3 Key-value interfaces
-\g__keyval_level_int=\count335
-\l_keys_choice_int=\count336
+\g__keyval_level_int=\count336
+\l_keys_choice_int=\count337
 L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
-\c__fp_leading_shift_int=\count337
-\c__fp_middle_shift_int=\count338
-\c__fp_trailing_shift_int=\count339
-\c__fp_big_leading_shift_int=\count340
-\c__fp_big_middle_shift_int=\count341
-\c__fp_big_trailing_shift_int=\count342
-\c__fp_Bigg_leading_shift_int=\count343
-\c__fp_Bigg_middle_shift_int=\count344
-\c__fp_Bigg_trailing_shift_int=\count345
+\c__fp_leading_shift_int=\count338
+\c__fp_middle_shift_int=\count339
+\c__fp_trailing_shift_int=\count340
+\c__fp_big_leading_shift_int=\count341
+\c__fp_big_middle_shift_int=\count342
+\c__fp_big_trailing_shift_int=\count343
+\c__fp_Bigg_leading_shift_int=\count344
+\c__fp_Bigg_middle_shift_int=\count345
+\c__fp_Bigg_trailing_shift_int=\count346
 L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
 \c_empty_box=\box66
 \l_tmpa_box=\box67
@@ -1454,14 +1455,14 @@ File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
 File: l3pdfmode.def 2015/05/21 v5613 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count346
+\l__driver_color_stack_int=\count347
 ))
 Package: xparse 2015/06/15 v5630 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count347
-\l__xparse_m_args_int=\count348
-\l__xparse_mandatory_args_int=\count349
-\l__xparse_processor_int=\count350
-\l__xparse_v_nesting_int=\count351
+\l__xparse_current_arg_int=\count348
+\l__xparse_m_args_int=\count349
+\l__xparse_mandatory_args_int=\count350
+\l__xparse_processor_int=\count351
+\l__xparse_v_nesting_int=\count352
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
 Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
@@ -1472,14 +1473,14 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count352
+\c@abspage=\count353
 Package zref Info: New property: abspage on input line 62.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\needspace\needspace.sty"
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip94
-\c@mdf@globalstyle@cnt=\count353
+\c@mdf@globalstyle@cnt=\count354
 \mdf@skipabove@length=\skip95
 \mdf@skipbelow@length=\skip96
 \mdf@leftmargin@length=\skip97
@@ -1555,7 +1556,7 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@horizontalspaceofbox=\skip158
 \mdfsubtitleheight=\skip159
 \mdfsubsubtitleheight=\skip160
-\c@mdfcountframes=\count354
+\c@mdfcountframes=\count355
 
 ****** mdframed patching \endmdf@trivlist
 
@@ -1571,39 +1572,39 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 . 
 . Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
 .................................................
-\mdf@envdepth=\count355
-\c@mdf@env@i=\count356
-\c@mdf@env@ii=\count357
-\c@mdf@zref@counter=\count358
+\mdf@envdepth=\count356
+\c@mdf@env@i=\count357
+\c@mdf@env@ii=\count358
+\c@mdf@zref@counter=\count359
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 764.
+(hyperref)                setting the option has no effect on input line 766.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 764.
+(hyperref)                setting the option has no effect on input line 766.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 764.
+(hyperref)                setting the option has no effect on input line 766.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 764.
-Package hyperref Info: Option `breaklinks' set `true' on input line 764.
+Package hyperref Info: Option `colorlinks' set `false' on input line 766.
+Package hyperref Info: Option `breaklinks' set `true' on input line 766.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 764.
+(hyperref)                setting the option has no effect on input line 766.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 764.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 766.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty"
 Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bkm-pdftex.def"
 File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
-\BKM@id=\count359
+\BKM@id=\count360
 ))
-\c@exo=\count360
+\c@exo=\count361
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -1763,7 +1764,7 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count361
+\c@AlgoLine=\count362
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -1806,29 +1807,29 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algoheightrule=\skip174
 \algotitleheightruledefault=\skip175
 \algotitleheightrule=\skip176
-\c@algocfline=\count362
-\c@algocfproc=\count363
-\c@algocf=\count364
+\c@algocfline=\count363
+\c@algocfproc=\count364
+\c@algocf=\count365
 \algocf@algoframe=\box92
 \algocf@algobox=\box93
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count365
+\lst@mode=\count366
 \lst@gtempboxa=\box94
 \lst@token=\toks45
-\lst@length=\count366
+\lst@length=\count367
 \lst@currlwidth=\dimen264
-\lst@column=\count367
-\lst@pos=\count368
+\lst@column=\count368
+\lst@pos=\count369
 \lst@lostspace=\dimen265
 \lst@width=\dimen266
-\lst@newlines=\count369
-\lst@lineno=\count370
+\lst@newlines=\count370
+\lst@lineno=\count371
 \lst@maxwidth=\dimen267
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count371
-\lst@skipnumbers=\count372
+\c@lstnumber=\count372
+\lst@skipnumbers=\count373
 \lst@framebox=\box95
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
@@ -1856,8 +1857,8 @@ File: french.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count373
-\@quotereset=\count374
+\@quotelevel=\count374
+\@quotereset=\count375
 (Cycle_RdM_03_Flexion_Fiche.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
@@ -1904,7 +1905,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count375
+\c@section@level=\count376
 )
 LaTeX Info: Redefining \ref on input line 62.
 LaTeX Info: Redefining \pageref on input line 62.
@@ -1946,16 +1947,16 @@ LaTeX Info: Redefining \nameref on input line 62.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count376
+\scratchcounter=\count377
 \scratchdimen=\dimen268
 \scratchbox=\box97
-\nofMPsegments=\count377
-\nofMParguments=\count378
+\nofMPsegments=\count378
+\nofMParguments=\count379
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count379
+\MPscratchCnt=\count380
 \MPscratchDim=\dimen269
-\MPnumerator=\count380
-\makeMPintoPDFobject=\count381
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
 \everyMPtoPDFconversion=\toks47
 ) ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \degres on input line 62.
@@ -1984,7 +1985,7 @@ Package biblatex Info: ... file 'Cycle_RdM_03_Flexion_Fiche.bbl' not found.
 No file Cycle_RdM_03_Flexion_Fiche.bbl.
 Package biblatex Info: Reference section=0 on input line 62.
 Package biblatex Info: Reference segment=0 on input line 62.
-\c@lstlisting=\count382
+\c@lstlisting=\count383
 (style/new_pagegarde.tex
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
 (Font)              scaled to size 19.08076pt on input line 192.
@@ -2203,113 +2204,84 @@ Overfull \hbox (13.80461pt too wide) detected at line 103
 0 y [][]
  []
 
+
+Overfull \hbox (52.19019pt too wide) detected at line 116
+\OML/mdput/m/it/10 EI[][] \OT1/mdput/m/n/10 = \OML/mdput/m/it/10 M[] [][]
+ []
+
 <images/contrainte_torsion.png, id=8, 298.11375pt x 314.17375pt>
 File: images/contrainte_torsion.png Graphic file (type png)
 
 <use images/contrainte_torsion.png>
-Package pdftex.def Info: images/contrainte_torsion.png used on input line 130.
+Package pdftex.def Info: images/contrainte_torsion.png used on input line 121.
 (pdftex.def)             Requested size: 105.68106pt x 111.37186pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 136.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 150.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 159.
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
-
- []
-
-LaTeX Font Info:    Try loading font information for TS1+mdput on input line 16
-1.
+(mdframed)              on input line 172.
+LaTeX Font Info:    Try loading font information for TS1+mdput on input line 17
+6.
 
 (C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
 design\mdput\ts1mdput.fd
 File: ts1mdput.fd 2006/01/29 Fontinst v1.928 font definitions for TS1/mdput.
 )
 LaTeX Font Info:    Font shape `TS1/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 161.
+(Font)              scaled to size 9.19998pt on input line 176.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `mdput' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 183.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 172.
+(Font)              scaled to size 7.35999pt on input line 195.
 LaTeX Font Info:    Font shape `T1/mdput/m/sl' will be
-(Font)              scaled to size 7.35999pt on input line 172.
+(Font)              scaled to size 7.35999pt on input line 195.
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <8> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 172.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 195.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 7.35999pt on input line 172.
+(Font)              scaled to size 7.35999pt on input line 195.
  [1
 
 {C:/Users/Xavier/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/t
 orsion.png> <./images/contrainte_torsion.png>]
-<images/essai_traction.png, id=33, 1441.385pt x 481.8pt>
-File: images/essai_traction.png Graphic file (type png)
-
-<use images/essai_traction.png>
-Package pdftex.def Info: images/essai_traction.png used on input line 178.
-(pdftex.def)             Requested size: 483.69687pt x 161.67784pt.
-
-<png/logo_lycee.png, id=34, 329.23pt x 265.99374pt>
-File: png/logo_lycee.png Graphic file (type png)
- <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png used on input line 183.
-(pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
-LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
-(Font)              scaled to size 7.35999pt on input line 183.
-LaTeX Font Info:    Font shape `T1/pag/m/it' in size <8> not available
-(Font)              Font shape `T1/pag/m/sl' tried instead on input line 183.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 45.97325pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2 <./png/logo_lycee.png> <./images/essai_traction.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
 
 (Cycle_RdM_03_Flexion_Fiche.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 183.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 195.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package logreq Info: Writing requests to 'Cycle_RdM_03_Flexion_Fiche.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 36721 strings out of 493675
- 667682 string characters out of 3143992
- 1250924 words of memory out of 3000000
- 39392 multiletter control sequences out of 15000+200000
- 161353 words of font info for 162 fonts, out of 3000000 for 9000
+ 36675 strings out of 493675
+ 666971 string characters out of 3143992
+ 1247007 words of memory out of 3000000
+ 39387 multiletter control sequences out of 15000+200000
+ 148149 words of font info for 137 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 57i,25n,79p,10439b,1931s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Program File
-s/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}<C:/Enseignement/Livre_Exo_V
+ 57i,25n,77p,10439b,1931s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/texnansi.enc}{C:/Progra
+m Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Enseignement/Livre_Exo_V
 uibert/Installation/MATHDESIGN/texmf/fonts/type1/mathdesign/mdput/md-utr7t.pfb>
 <C:/Enseignement/Livre_Exo_Vuibert/Installation/MATHDESIGN/texmf/fonts/type1/ma
 thdesign/mdput/md-utr7v.pfb><C:/Enseignement/Livre_Exo_Vuibert/Installation/MAT
 HDESIGN/texmf/fonts/type1/mathdesign/mdput/md-utr7y.pfb><C:/Enseignement/Livre_
-Exo_Vuibert/Installation/MATHDESIGN/texmf/fonts/type1/mathdesign/mdput/md-utr8t
-.pfb><C:/Enseignement/Livre_Exo_Vuibert/Installation/MATHDESIGN/texmf/fonts/typ
-e1/mathdesign/mdput/md-utri7m.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adob
-e/utopia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8
-a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/avantgar/uagko8a.pfb>
-Output written on Cycle_RdM_03_Flexion_Fiche.pdf (2 pages, 340074 bytes).
+Exo_Vuibert/Installation/MATHDESIGN/texmf/fonts/type1/mathdesign/mdput/md-utri7
+m.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/adobe/utopia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avan
+tgar/uagd8a.pfb>
+Output written on Cycle_RdM_03_Flexion_Fiche.pdf (1 page, 132295 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 47665 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 69 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 41503 words of extra memory for PDF output out of 42996 (max. 10000000)
 

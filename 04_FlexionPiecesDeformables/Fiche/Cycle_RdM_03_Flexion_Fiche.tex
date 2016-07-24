@@ -101,29 +101,20 @@ I_{Gz} &\text{moment quadratique par rapport à l'axe Gx en mm}^4 \text{ et} \\
 y &\text{distance à la fibre neutre en mm.}
 \end{array}
 $$
-L'angle unitaire de torsion est défini par 
+La déformée $y(x)$ de la poutre vérifie l'équation différentielle suivante :
+
 $$
-\theta(x) = \dfrac{\text{d} \varphi}{\text{d} x} 
+EI_{Gz}\dfrac{\text{d}^2 y(x) }{\text{d} x^2} = M_{fz}
 \quad 
 \text{avec}
 \begin{array}{ll}
-\theta &\text{angle unitaire de torsion en rad/m,}\\
-\text{d} \varphi &\text{} \\
-\text{d} x &\text{.} \\
+E &\text{module de Young en MPa,}\\
+I_{Gz} &\text{moment quadratique par rapport à l'axe} \left(G,\vect{x} \right) \text{en mm}^4, \\
+y(x) &\text{déformée de la poutre en mm,} \\
+M_{fz} &\text{moment fléchissant en Nm.} \\
 \end{array}
 $$
 
-La déformation est définie par : 
-$$
-\gamma = r \dfrac{\text{d} \varphi}{\text{d} x} = r\theta  
-\quad 
-\text{avec}
-\begin{array}{ll}
-\theta &\text{angle unitaire de torsion en rad/m,}\\
-\text{d} \varphi &\text{} \\
-\text{d} x &\text{.} \\
-\end{array}
-$$
 \end{minipage} \hfill
 \begin{minipage}[c]{.25\linewidth}
 \begin{center}
@@ -132,53 +123,74 @@ $$
 \end{minipage}
 \end{defi}
 
+%
+%\begin{resultat}
+%\textbf{Loi de comportement -- Loi de Hooke} ~\\
+%Lorsqu'un matériau est sollicité dans un domaine élastique, contrainte et déformation sont liées par la loi de Hooke : 
+%$$ \tau = G \gamma
+%\quad 
+%\text{avec}
+%\begin{array}{ll}
+%\sigma &\text{contrainte en \text{MPa}},\\
+%\varepsilon &\text{déformation sans dimension,}\\
+%E &\text{module de Young en MPa (N}\cdot\text{mm}^2\text{).}
+%\end{array}
+%$$
+%\end{resultat}
+%
+%\begin{resultat} -- \textbf{Déformations transversales} ~\\
+%En traction, la déformation la plus importante est suivant la direction de l'effort. Cependant, cet allongement s'accompagne d'un rétrécissement de la section. Le coefficient de Poisson est défini par (on considère que la direction de traction est suivant $\vect{x}$): 
+%$$
+%\nu = \dfrac{\varepsilon_y}{\varepsilon_x} = \dfrac{\varepsilon_z}{\varepsilon_x} \simeq 0,3.
+%$$
+%
+%\end{resultat}
+%
+%
+%\begin{resultat} -- \textbf{Dimensionnement à la traction} ~\\
+%\begin{itemize}
+%\item Dimensionnement en contrainte : pour dimensionner une poutre à la traction avec un coefficient de sécurité $s$ (supérieur à 1), la contrainte maximale ne doit pas dépasser la résistance pratique à l'extension $Rpe = \dfrac{Re}{S}$ :
+%$$
+%\sigma_{max} \leq \dfrac{Re}{s} \quad \text{(Re : limite d'élasticité en MPa)}.
+%$$ 
+%\item Dimensionnement en déplacement : le déplacement d'un point ne doit pas dépasser un déplacement limite fixé par le cahier des charges.
+%
+%\item Suivant la géométrie de la poutre (gorges, rayon de raccordement...), des concentrations de contraintes peuvent apparaître. Ainsi la contrainte maximale est pondérée par un coefficient $Kt$ donnée par des abaques : 
+%$$
+%\sigma_{max} Kt \leq \dfrac{Re}{s}.
+%$$ 
+%\end{itemize}
+%\end{resultat}
+%
 
-\begin{resultat}
-\textbf{Loi de comportement -- Loi de Hooke} ~\\
-Lorsqu'un matériau est sollicité dans un domaine élastique, contrainte et déformation sont liées par la loi de Hooke : 
-$$ \tau = G \gamma
-\quad 
-\text{avec}
-\begin{array}{ll}
-\sigma &\text{contrainte en \text{MPa}},\\
-\varepsilon &\text{déformation sans dimension,}\\
-E &\text{module de Young en MPa (N}\cdot\text{mm}^2\text{).}
-\end{array}
-$$
-\end{resultat}
+%\section{Caractérisation des paramètres}
+%Le module de Young $E$, la limite élastique $Re$ et la limite à la rupture $Rm$ sont déterminés grâce à l'essai de traction. 
+%\begin{center}
+%\includegraphics[width=\linewidth]{images/essai_traction}
+%\end{center}
 
-\begin{resultat} -- \textbf{Déformations transversales} ~\\
-En traction, la déformation la plus importante est suivant la direction de l'effort. Cependant, cet allongement s'accompagne d'un rétrécissement de la section. Le coefficient de Poisson est défini par (on considère que la direction de traction est suivant $\vect{x}$): 
-$$
-\nu = \dfrac{\varepsilon_y}{\varepsilon_x} = \dfrac{\varepsilon_z}{\varepsilon_x} \simeq 0,3.
-$$
-
-\end{resultat}
-
-
-\begin{resultat} -- \textbf{Dimensionnement à la traction} ~\\
+\begin{prop}
+\textbf{Propriétés des sections droites}
+On considère une poutre de section droite $S$ et d'axe $\left(G,\vect{x} \right)$. On note :
 \begin{itemize}
-\item Dimensionnement en contrainte : pour dimensionner une poutre à la traction avec un coefficient de sécurité $s$ (supérieur à 1), la contrainte maximale ne doit pas dépasser la résistance pratique à l'extension $Rpe = \dfrac{Re}{S}$ :
-$$
-\sigma_{max} \leq \dfrac{Re}{s} \quad \text{(Re : limite d'élasticité en MPa)}.
-$$ 
-\item Dimensionnement en déplacement : le déplacement d'un point ne doit pas dépasser un déplacement limite fixé par le cahier des charges.
-
-\item Suivant la géométrie de la poutre (gorges, rayon de raccordement...), des concentrations de contraintes peuvent apparaître. Ainsi la contrainte maximale est pondérée par un coefficient $Kt$ donnée par des abaques : 
-$$
-\sigma_{max} Kt \leq \dfrac{Re}{s}.
-$$ 
+\item moment quadratique de $S$ par rapport à $\left(G,\vect{y} \right)$ : $I_{Gy} = \iint\limits_S z^2 \text{d}S$;
+\item moment quadratique de $S$ par rapport à $\left(G,\vect{z} \right)$ : $I_{Gz} = \iint\limits_S y^2 \text{d}S$;
+\item moment polaire de $S$ par rapport à $\left(G,\vect{x} \right)$ : $I_{Gx} = \iint\limits_S \left( y^2 + z^2 \right) \text{d}S$;
+\item $I_{Gx}=I_{Gy}+I_{Gz}$.
 \end{itemize}
-\end{resultat}
+\end{prop}
 
-
-\section{Caractérisation des paramètres}
-Le module de Young $E$, la limite élastique $Re$ et la limite à la rupture $Rm$ sont déterminés grâce à l'essai de traction. 
-\begin{center}
-\includegraphics[width=\linewidth]{images/essai_traction}
-\end{center}
-
-
+\begin{theorem}
+\textbf{Théorème de Huygens} ~\\
+On a, avec $\vect{AG}=\left(a,b,c \right)$ :
+$$
+I_{Ay}=I_{Gy} + Sc^2 
+\quad 
+I_{Az}=I_{Gz} + Sb^2 
+\quad 
+I_{Ax}=I_{Gx} + S\left(b^2+c^2 \right). 
+$$
+\end{theorem}
 
 \end{document}
 
