@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  24 JUL 2016 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  25 JUL 2016 09:52
 entering extended mode
 **Cycle_RdM_03_Flexion_Fiche.tex
 (Cycle_RdM_03_Flexion_Fiche.tex
@@ -2190,79 +2190,79 @@ LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 75.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
 (Font)              scaled to size 4.59999pt on input line 75.
-<images/torsion.png, id=6, 743.77875pt x 480.79625pt>
-File: images/torsion.png Graphic file (type png)
- <use images/torsion.png>
-Package pdftex.def Info: images/torsion.png used on input line 82.
-(pdftex.def)             Requested size: 140.91049pt x 91.08812pt.
+<images/flexion.png, id=6, 759.83875pt x 221.82875pt>
+File: images/flexion.png Graphic file (type png)
+ <use images/flexion.png>
+Package pdftex.def Info: images/flexion.png used on input line 82.
+(pdftex.def)             Requested size: 140.91049pt x 41.13582pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 90.
+(mdframed)              on input line 88.
 
-Overfull \hbox (13.80461pt too wide) detected at line 103
+Overfull \hbox (13.80461pt too wide) detected at line 101
 \OML/mdput/m/it/10  \OT1/mdput/m/n/10 = \OMS/mdput/m/n/10  []\OML/mdput/m/it/1
 0 y [][]
  []
 
 
-Overfull \hbox (52.19019pt too wide) detected at line 116
+Overfull \hbox (52.19019pt too wide) detected at line 114
 \OML/mdput/m/it/10 EI[][] \OT1/mdput/m/n/10 = \OML/mdput/m/it/10 M[] [][]
  []
 
-<images/contrainte_torsion.png, id=8, 298.11375pt x 314.17375pt>
-File: images/contrainte_torsion.png Graphic file (type png)
+<images/contrainte_flexion.png, id=8, 368.37625pt x 246.9225pt>
+File: images/contrainte_flexion.png Graphic file (type png)
 
-<use images/contrainte_torsion.png>
-Package pdftex.def Info: images/contrainte_torsion.png used on input line 121.
-(pdftex.def)             Requested size: 105.68106pt x 111.37186pt.
+<use images/contrainte_flexion.png>
+Package pdftex.def Info: images/contrainte_flexion.png used on input line 119.
+(pdftex.def)             Requested size: 105.68106pt x 70.83707pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 172.
+(mdframed)              on input line 170.
 LaTeX Font Info:    Try loading font information for TS1+mdput on input line 17
-6.
+4.
 
 (C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
 design\mdput\ts1mdput.fd
 File: ts1mdput.fd 2006/01/29 Fontinst v1.928 font definitions for TS1/mdput.
 )
 LaTeX Font Info:    Font shape `TS1/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 176.
+(Font)              scaled to size 9.19998pt on input line 174.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `mdput' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 183.
+(mdframed)              on input line 181.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 195.
+(Font)              scaled to size 7.35999pt on input line 193.
 LaTeX Font Info:    Font shape `T1/mdput/m/sl' will be
-(Font)              scaled to size 7.35999pt on input line 195.
+(Font)              scaled to size 7.35999pt on input line 193.
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <8> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 195.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 193.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 7.35999pt on input line 195.
+(Font)              scaled to size 7.35999pt on input line 193.
  [1
 
-{C:/Users/Xavier/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/t
-orsion.png> <./images/contrainte_torsion.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+{C:/Users/Xavier/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/f
+lexion.png> <./images/contrainte_flexion.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
 
 (Cycle_RdM_03_Flexion_Fiche.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 195.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 193.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package logreq Info: Writing requests to 'Cycle_RdM_03_Flexion_Fiche.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
  ) 
 Here is how much of TeX's memory you used:
  36675 strings out of 493675
  666971 string characters out of 3143992
- 1247007 words of memory out of 3000000
+ 1247000 words of memory out of 3000000
  39387 multiletter control sequences out of 15000+200000
  148149 words of font info for 137 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -2279,7 +2279,7 @@ ram Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/adobe/utopia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avan
 tgar/uagd8a.pfb>
-Output written on Cycle_RdM_03_Flexion_Fiche.pdf (1 page, 132295 bytes).
+Output written on Cycle_RdM_03_Flexion_Fiche.pdf (1 page, 105063 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
