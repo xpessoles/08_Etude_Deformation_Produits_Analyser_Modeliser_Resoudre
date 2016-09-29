@@ -12,7 +12,7 @@
 %\fichefalse
 
 \proftrue
-\proffalse
+%\proffalse
 
 \tdtrue
 %\tdfalse
@@ -84,241 +84,8 @@ Cycle 2 -- Modélisation des sollicitations \\
 \begin{multicols}{2}
 \fi
 
+
 \section*{Exercice 1}
-\setcounter{subparagraph}{0}
-On donne sur le schéma ci-dessous la modélisation d'une poutre et des efforts qui lui sont appliqués.
-\begin{center}
-\includegraphics[width=.45\textwidth]{images/exo_08}
-\end{center}
-
-\subparagraph{}
-\textit{Proposer une méthode permettant de déterminer le torseur de cohésion dans chacun des tronçons. Est-il nécessaire de déterminer les actions mécaniques en $A$ ?}
-
-\subparagraph{}
-\textit{Déterminer le torseur de cohésion dans chacun des tronçons.}
-
-
-\ifprof
-\begin{corrige}
-\subsubsection*{On considère le tronçon AB}
-On considère donc $\vect{AG} = \lambda \vect{x}$ avec $\lambda\in \left[0,\dfrac{L}{2}\right]$.
-\begin{center}
-\includegraphics[width=.45\textwidth]{images/exo_08_corr_01}
-\end{center}
-
-
-On isole la partie de droite, notée $+$ soumise aux actions de :
-\begin{itemize}[label=\ding{112},font=\color{ocre}] 
-\item torseur de cohésion : $\torseurscoh_{S-\rightarrow S+}$ en $G$;
-\item action mécanique en $B$ : $\torseurcol{0}{-F_1}{0}{0}{0}{0}{B,\left( \vect{x},\vect{y},\vect{z} \right)}  =\torseurcol{0}{-F_1}{0}{0}{0}{-\left(\dfrac{L}{2}-\lambda \right)F_1}{G,\left( \vect{x},\vect{y},\vect{z} \right)} $;
-\item action mécanique en $D$ : $\torseurcol{F_2}{0}{0}{0}{0}{0}{D,\left( \vect{x},\vect{y},\vect{z} \right)}  =\torseurcol{F_2}{0}{0}{0}{0}{-F_2h}{G,\left( \vect{x},\vect{y},\vect{z} \right)} $.
-\end{itemize}
-
-
-Par application du PFS on a : 
-$$ \torseurscoh_{S-\rightarrow S+} +\torseurstat{T}{F_1}{S+} +\torseurstat{T}{F_2}{S+} = \{0\} \Leftrightarrow \torseurscoh_{S+\rightarrow S-} =\torseurstat{T}{F_1}{S+} +\torseurstat{T}{F_2}{S+}  $$
-On a donc  :
-$$
-\torseurcol{N}{T_y}{T_z}{M_t}{Mf_y}{Mf_z}{G} = 
-\torseurcol{F_2}{-F_1}{0}{0}{0}{-\left(\dfrac{L}{2}-\lambda \right)F_1-F_2h}{G,\left( \vect{x},\vect{y},\vect{z} \right)}
-$$
-
-\subsubsection*{On considère le tronçon BC}
-On considère donc $\vect{AG} = \lambda \vect{x}$ avec $\lambda\in \left[\dfrac{L}{2},L\right]$.
-\begin{center}
-\includegraphics[width=.45\textwidth]{images/exo_08_corr_02}
-\end{center}
-
-
-On isole la partie de droite, notée $+$ soumise aux actions de :
-\begin{itemize}[label=\ding{112},font=\color{ocre}] 
-\item torseur de cohésion : $\torseurscoh_{S-\rightarrow S+}$ en $G$;
-\item action mécanique en $D$ : $\torseurcol{F_2}{0}{0}{0}{0}{0}{D,\left( \vect{x},\vect{y},\vect{z} \right)}  =\torseurcol{F_2}{0}{0}{0}{0}{-F_2h}{G,\left( \vect{x},\vect{y},\vect{z} \right)} $.
-\end{itemize}
-
-
-Par application du PFS on a : 
-$$ \torseurscoh_{S-\rightarrow S+} +\torseurstat{T}{F_2}{S+} = \{0\} \Leftrightarrow \torseurscoh_{S+\rightarrow S-} =\torseurstat{T}{F_2}{S+}  $$
-On a donc  :
-$$
-\torseurcol{N}{T_y}{T_z}{M_t}{Mf_y}{Mf_z}{G} = 
-\torseurcol{F_2}{0}{0}{0}{0}{-F_2h}{G,\left( \vect{x},\vect{y},\vect{z} \right)}
-$$
-\subsubsection*{On considère le tronçon CD}
-On considère donc $\vect{AG} = \lambda \vect{x}_1-L \vect{y}_1$  avec $\lambda\in \left[0,h\right]$.
-\begin{center}
-\includegraphics[width=.45\textwidth]{images/exo_08_corr_03}
-\end{center}
-
-
-On isole la partie de droite, notée $+$ soumise aux actions de :
-\begin{itemize}[label=\ding{112},font=\color{ocre}] 
-\item torseur de cohésion : $\torseurscoh_{S-\rightarrow S+}$ en $G$;
-\item action mécanique en $D$ : $\torseurcol{0}{-F_2}{0}{0}{0}{0}{D,\left( \vect{x_1},\vect{y_1},\vect{z} \right)}  =\torseurcol{0}{-F_2}{0}{0}{0}{-F_2\left(h-\lambda\right)}{G,\left( \vect{x_1},\vect{y_1},\vect{z} \right)} $.
-\end{itemize}
-
-
-Par application du PFS on a : 
-$$ \torseurscoh_{S-\rightarrow S+} +\torseurstat{T}{F_2}{S+} = \{0\} \Leftrightarrow \torseurscoh_{S+\rightarrow S-} =+\torseurstat{T}{F_2}{S+}  $$
-On a donc  :
-$$
-\torseurcol{N}{T_y}{T_z}{M_t}{Mf_y}{Mf_z}{G,\left( \vect{x_1},\vect{y_1},\vect{z} \right)} = 
-\torseurcol{0}{-F_2}{0}{0}{0}{-F_2\left(h-\lambda\right)}{G,\left( \vect{x_1},\vect{y_1},\vect{z} \right)}
-$$
-
-
-
-\end{corrige}
-\else 
-\fi
-
-
-\subparagraph{}
-\textit{Tracer le diagramme des sollicitations.}
-
-
-
-\section*{Exercice 2}
-\setcounter{subparagraph}{0}
-On donne sur le schéma ci-dessous la modélisation d'une poutre et des efforts qui lui sont appliqués.
-\subparagraph{}
-\textit{Est-il nécessaire de déterminer les actions mécaniques en $A$ et en $B$.}
-\ifprof
-\begin{corrige}
-Si on isole la partie <<II>>, elle est soumise à l'effort $\vect{F}$ et à l'action du torseur de cohésion. On n'aura donc pas besoin de l'action dans la liaison encastrement pour pouvoir déterminer le torseur de cohésion. 
-\end{corrige}
-\else 
-\fi
-
-
-On cherche à déterminer le diagramme des sollicitations dans chacun des tronçons.
-
-\subparagraph{}
-\textit{Exprimer le torseur de cohésion dans chacun des tronçons.}
-\ifprof
-\begin{corrige}
- ~\\
-\begin{itemize}[label=\ding{112},font=\color{ocre}] 
-\item On isole la portion $[MB]$ (+).
-\item La portion est soumise d'une part à l'action mécanique en $B$ et d'autre part à l'action mécanique du torseur de cohésion.
-\item On a donc : 
-\end{itemize}
-$$
-\torseurscoh_{S-\rightarrow S+} +
- \torseurcol{-F}{0}{0}{0}{0}{0}{B,\left( \vect{x},\vect{y},\vect{z} \right)} 
- = \{0\}
-$$
-%
-%$$
-%\torseurscoh_{S+\rightarrow S-}
-%=-\torseurcol{F}{0}{0}{0}{0}{0}{G}
-%-\torseurcol{0}{-px}{0}{0}{0}{ \dfrac{px^2}{2}}{G}
-%=\torseurcol{-F}{px}{0}{0}{0}{-\dfrac{px^2}{2}}{G}
-%$$
-%car 
-$\vectm{M}{\text{Ext}}{\text{Poutre}}
-=\vectm{B}{\text{Ext}}{\text{Poutre}} + \vect{MB}  \wedge -F \vect{x} 
-=\left( -R\vect{u} + R\vect{x}\right) \wedge -F \vect{x} 
-=  - RF \sin \theta \vect{z}
-$  et $-F \vect{x}  = -F \left( \cos \theta \vect{u}-\sin \theta \vect{v} \right) $.
-
-On a donc :
-$$
-\torseurscoh_{S+\rightarrow S-} 
-= 
- \torseurcol{-F\cos \theta }{F\sin \theta }{0}{0}{0}{ - RF \sin \theta}{M,\left( \vect{u},\vect{v},\vect{z} \right)} 
-$$
-
-\textbf{TODO : diagrammes}
-\end{corrige}
-\else 
-\fi
-
-
-%\subparagraph{}
-%\textit{Tracer les diagrammes des sollicitations.}
-%\ifprof
-%\begin{corrige}
-%\end{corrige}
-%\else 
-%\fi
-\ifprof
-\else
-\begin{center}
-\includegraphics[width=.4\textwidth]{images/exo_04}
-\end{center}
-\fi
-
-
-\section*{Exercice 3}
-\setcounter{subparagraph}{0}
-On donne sur le schéma ci-dessous la modélisation d'une poutre et des efforts qui lui sont appliqués. On note $p$ la densité d'effort linéique.
-\begin{center}
-\includegraphics[width=.45\textwidth]{images/exo_05}
-\end{center}
-
-\subparagraph{}
-\textit{Déterminer les actions mécaniques en $A$ et en $B$.}
-\ifprof
-\begin{corrige}
-On a $Y_A = Y_B = \dfrac{pl}{2}$.
-\end{corrige}
-\else 
-\fi
-
-
-%On cherche à déterminer le diagramme des sollicitations dans chacun des tronçons.
-
-\subparagraph{}
-\textit{Exprimer le torseur de cohésion dans chacun des tronçons.}
-\ifprof
-\begin{corrige}
-\begin{itemize}
-\item On isole la portion $[GB]$.
-\item La portion est soumise à l'action mécanique en $B$, à l'action uniformément répartie (exprimée en $M$, milieu de $[GB]$) et à l'action mécanique du torseur de cohésion en $G$.
-\item On a donc : 
-\end{itemize}
-$$
-\torseurscoh_{S-\rightarrow S+} +
- \torseurcol{0}{\dfrac{pl}{2}}{0}{0}{0}{0}{B,\left( \vect{x},\vect{y},\vect{z} \right)} 
- +\torseurcol{0}{-p(l-x)}{0}{0}{0}{0}{M,\left( \vect{x},\vect{y},\vect{z} \right)} 
- = \{0\}
-$$
-On a donc, $\forall x \in \left[0,l\right]$, 
-$$
-\torseurscoh_{S+\rightarrow S-}
-= \torseurcol{0}{\dfrac{pl}{2}}{0}{0}{0}{(l-x)\dfrac{pl}{2}}{G} 
- +\torseurcol{0}{-p(l-x)}{0}{0}{0}{-p\dfrac{\left(l-x\right)^2}{2}}{G} 
- = \torseurcol{0}{\dfrac{pl}{2}-p(l-x)}{0}{0}{0}{(l-x)\dfrac{pl}{2}-p\dfrac{\left(l-x\right)^2}{2}}{G} 
-$$
-car 
-$\vectm{G}{\text{Ext}}{\text{Poutre}}
-=\vectm{B}{\text{Ext}}{\text{Poutre}} + \vect{GB}\wedge \dfrac{pl}{2} \vect{y}  
-=  (l-x)\vect{x}  \wedge \dfrac{pl}{2} \vect{y}
-=  \dfrac{pl(l-x)}{2} \vect{z}
-$ 
-
-et 
-$\vectm{G}{\text{Ext}}{\text{Poutre}}
-=  \vectm{M}{\text{Ext}}{\text{Poutre}} + \vect{GM}\wedge \left( -p(l-x) \right) \vect{y}  
-= \left(\dfrac{l-x}{2}\right)\vect{x}\wedge \left(-p(l-x)\right) \vect{y}  
-=  -p\dfrac{\left(l-x\right)^2}{2}\vect{z}  
-$.
-\end{corrige}
-\else 
-\fi
-
-\subparagraph{}
-\textit{Tracer les diagrammes des sollicitations.}
-\ifprof
-\begin{corrige}
-\end{corrige}
-\else 
-\fi
-
-%\newpage
-
-\section*{Exercice 5}
 \setcounter{subparagraph}{0}
 On donne sur le schéma ci-dessous la modélisation d'une poutre. On y exerce une charge répartie de pression $p$ (en $\text{N}\text{m}^{-1}$).
 \begin{center}
@@ -353,7 +120,7 @@ On cherche à déterminer le diagramme des sollicitations dans chacun des tronç
 On ne considèrera qu'une seule partie, dans laquelle on aura deux tronçons.
 
 \begin{center}
-\includegraphics[width=.9\textwidth]{images/exo_06_param}
+\includegraphics[width=.45\textwidth]{images/exo_06_param}
 \end{center}
 
 \end{corrige}
@@ -566,6 +333,419 @@ $$
 
 
 
+
+
+
+\section*{Exercice 2}
+\setcounter{subparagraph}{0}
+On donne sur le schéma ci-dessous la modélisation d'une poutre et des efforts qui lui sont appliqués.
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/exo_02}
+\end{center}
+
+\subparagraph{}
+\textit{Déterminer les actions mécaniques en $A$ et en $B$... et remarquer que cela peut ne servir à rien pour la suite du problème...}
+\ifprof
+\begin{corrige}
+\textit{Remarque :}
+Pour déterminer le torseur de cohésion dans ce cas il n'est pas nécessaire de déterminer les actions mécaniques dans la liaison encastrement.
+
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item On isole la poutre.
+\item La poutre est soumise à une liaison encastrement en $A$ et à une action mécanique en $C$.
+\item On a donc :
+\end{itemize}
+$$
+\torseurcol{X_A}{Y_A}{Z_A}{L_A}{M_A}{N_A}{A}
++\torseurcol{0}{0}{-F}{0}{0}{0}{C}
+=\{ 0\}
+$$
+
+$\vectm{A}{\text{Ext}}{\text{Poutre}}
+=\vectm{C}{\text{Ext}}{\text{Poutre}} + \vect{AC}\wedge -F \vect{z}  
+= \left(l\vect{x} - h\vect{z} \right) \wedge -F \vect{z}  
+= Fl\vect{y}$
+
+$$
+\torseurcol{X_A}{Y_A}{Z_A}{L_A}{M_A}{N_A}{A}
+= \torseurcol{0}{0}{F}{0}{-Fl}{0}{A}
+$$
+
+\end{corrige}
+\else 
+\fi
+
+
+On cherche à déterminer le diagramme des sollicitations dans chacun des tronçons.
+
+\subparagraph{}
+\textit{Quels tronçons peut-on considérer ?}
+\ifprof
+\begin{corrige}~\\
+\begin{minipage}[c]{.45\linewidth}
+On peut considérer les deux tronçons suivants :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item le tronçon $AB$ sur lequel $x\in[0,l]$;
+\item le tronçon $BC$ sur lequel on définit un repère local.
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[c]{.45\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{images/exo_02_corr_01}
+\end{center}
+\end{minipage}
+\end{corrige}
+\else 
+\fi
+
+\subparagraph{}
+\textit{Exprimer le torseur de cohésion dans chacun des tronçons.}
+
+\ifprof
+~\\
+\begin{corrige} ~\\
+
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item On isole le premier tronçon.
+\item Le tronçon est soumis d'une part à l'action mécanique en $A$ (vu qu'on l'a calculée, on va l'utilise ...) et d'autre part à l'action mécanique du torseur de cohésion.
+\item On a donc :
+\end{itemize}
+$$
+\torseurscoh_{S-\rightarrow S+} + \torseurcol{0}{0}{-F}{0}{0}{0}{C,\left( \vect{x},\vect{y},\vect{z} \right)} = \{0\}
+$$
+On a donc :
+$$
+\torseurscoh_{S+\rightarrow S-}
+=\torseurcol{0}{0}{-F}{0}{0}{0}{C,\left( \vect{x},\vect{y},\vect{z} \right)}
+$$
+
+$\vectm{G}{\text{Ext}}{\text{Poutre}}
+=\vectm{C}{\text{Ext}}{\text{Poutre}} + \vect{GC}\wedge -F \vect{z}  
+= \left( (l-x) \vect{x} - h\vect{y} \right) \wedge -F \vect{z}
+= F(l-x) \vect{y} +F h\vect{x} 
+$
+On a donc :
+$$
+\torseurscoh_{S+\rightarrow S-}
+=\torseurcol{0}{0}{-F}{Fh}{F(l-x)}{0}{G,\left( \vect{x},\vect{y},\vect{z} \right)}
+$$
+
+
+\begin{minipage}[c]{.45\linewidth}
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item On isole la portion $[GC]$.
+\item Le tronçon est soumis d'une part à l'action mécanique en $C$ et d'autre part à l'action mécanique du torseur de cohésion.
+\item On a donc :
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[c]{.45\linewidth}
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/exo_02_corr_02}
+\end{center}
+\end{minipage}
+$$
+\torseurscoh_{S-\rightarrow S+} + \torseurcol{0}{0}{-F}{0}{0}{0}{C,\left( \vect{x_1},\vect{y_1},\vect{z} \right)} = \{0\}
+$$
+On a donc :
+$$
+\torseurscoh_{S+\rightarrow S-}
+=\torseurcol{0}{0}{-F}{0}{0}{0}{C}
+$$
+
+$\vectm{G}{\text{Ext}}{\text{Poutre}}
+=\vectm{C}{\text{Ext}}{\text{Poutre}} + \vect{GC}\wedge -F \vect{z}  
+=  (h-x) \vect{x_1}  \wedge -F \vect{z}
+=  (h-x) F \vect{y_1}
+$. 
+On a donc :
+$$
+\torseurscoh_{S+\rightarrow S-}
+=\torseurcol{0}{0}{-F}{0}{(h-x) F}{0}{G,\left( \vect{x_1},\vect{y_1},\vect{z} \right)}
+%=\torseurcol{0}{0}{-F}{(h-x) F}{0}{0}{G,\left( \vect{x},\vect{y},\vect{z} \right)}
+$$
+
+
+
+\end{corrige}
+\else 
+\fi
+
+\subparagraph{}
+\textit{Tracer les diagrammes des sollicitations.}
+\ifprof
+\begin{corrige}~\\
+\begin{center}
+\includegraphics[width=.4\linewidth]{images/exo_02_corr_03}
+\end{center}
+
+\end{corrige}
+\else 
+\fi
+
+
+
+\subparagraph{}
+\textit{Retraiter l'exercice en ajoutant une charge répartie sur le segment $[AB]$.}
+\ifprof
+\begin{corrige}
+\end{corrige}
+
+\else 
+\fi
+
+
+
+\newpage
+
+
+
+
+\section*{Exercice 2}
+\setcounter{subparagraph}{0}
+On donne sur le schéma ci-dessous la modélisation d'une poutre et des efforts qui lui sont appliqués. On note $p$ la densité d'effort linéique.
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/exo_05}
+\end{center}
+
+\subparagraph{}
+\textit{Déterminer les actions mécaniques en $A$ et en $B$.}
+\ifprof
+\begin{corrige}
+On a $Y_A = Y_B = \dfrac{pl}{2}$.
+\end{corrige}
+\else 
+\fi
+
+
+%On cherche à déterminer le diagramme des sollicitations dans chacun des tronçons.
+
+\subparagraph{}
+\textit{Exprimer le torseur de cohésion dans chacun des tronçons.}
+\ifprof
+\begin{corrige}
+\begin{itemize}
+\item On isole la portion $[GB]$.
+\item La portion est soumise à l'action mécanique en $B$, à l'action uniformément répartie (exprimée en $M$, milieu de $[GB]$) et à l'action mécanique du torseur de cohésion en $G$.
+\item On a donc : 
+\end{itemize}
+$$
+\torseurscoh_{S-\rightarrow S+} +
+ \torseurcol{0}{\dfrac{pl}{2}}{0}{0}{0}{0}{B,\left( \vect{x},\vect{y},\vect{z} \right)} 
+ +\torseurcol{0}{-p(l-x)}{0}{0}{0}{0}{M,\left( \vect{x},\vect{y},\vect{z} \right)} 
+ = \{0\}
+$$
+On a donc, $\forall x \in \left[0,l\right]$, 
+$$
+\torseurscoh_{S+\rightarrow S-}
+= \torseurcol{0}{\dfrac{pl}{2}}{0}{0}{0}{(l-x)\dfrac{pl}{2}}{G} 
+ +\torseurcol{0}{-p(l-x)}{0}{0}{0}{-p\dfrac{\left(l-x\right)^2}{2}}{G} 
+ = \torseurcol{0}{\dfrac{pl}{2}-p(l-x)}{0}{0}{0}{(l-x)\dfrac{pl}{2}-p\dfrac{\left(l-x\right)^2}{2}}{G} 
+$$
+car 
+$\vectm{G}{\text{Ext}}{\text{Poutre}}
+=\vectm{B}{\text{Ext}}{\text{Poutre}} + \vect{GB}\wedge \dfrac{pl}{2} \vect{y}  
+=  (l-x)\vect{x}  \wedge \dfrac{pl}{2} \vect{y}
+=  \dfrac{pl(l-x)}{2} \vect{z}
+$ 
+
+et 
+$\vectm{G}{\text{Ext}}{\text{Poutre}}
+=  \vectm{M}{\text{Ext}}{\text{Poutre}} + \vect{GM}\wedge \left( -p(l-x) \right) \vect{y}  
+= \left(\dfrac{l-x}{2}\right)\vect{x}\wedge \left(-p(l-x)\right) \vect{y}  
+=  -p\dfrac{\left(l-x\right)^2}{2}\vect{z}  
+$.
+\end{corrige}
+\else 
+\fi
+
+\subparagraph{}
+\textit{Tracer les diagrammes des sollicitations.}
+\ifprof
+\begin{corrige}
+\end{corrige}
+
+\else 
+\fi
+
+
+
+
+
+
+
+\section*{Exercice 1}
+\setcounter{subparagraph}{0}
+On donne sur le schéma ci-dessous la modélisation d'une poutre et des efforts qui lui sont appliqués.
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/exo_08}
+\end{center}
+
+\subparagraph{}
+\textit{Proposer une méthode permettant de déterminer le torseur de cohésion dans chacun des tronçons. Est-il nécessaire de déterminer les actions mécaniques en $A$ ?}
+
+\subparagraph{}
+\textit{Déterminer le torseur de cohésion dans chacun des tronçons.}
+
+
+\ifprof
+\begin{corrige}
+\subsubsection*{On considère le tronçon AB}
+On considère donc $\vect{AG} = \lambda \vect{x}$ avec $\lambda\in \left[0,\dfrac{L}{2}\right]$.
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/exo_08_corr_01}
+\end{center}
+
+
+On isole la partie de droite, notée $+$ soumise aux actions de :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item torseur de cohésion : $\torseurscoh_{S-\rightarrow S+}$ en $G$;
+\item action mécanique en $B$ : $\torseurcol{0}{-F_1}{0}{0}{0}{0}{B,\left( \vect{x},\vect{y},\vect{z} \right)}  =\torseurcol{0}{-F_1}{0}{0}{0}{-\left(\dfrac{L}{2}-\lambda \right)F_1}{G,\left( \vect{x},\vect{y},\vect{z} \right)} $;
+\item action mécanique en $D$ : $\torseurcol{F_2}{0}{0}{0}{0}{0}{D,\left( \vect{x},\vect{y},\vect{z} \right)}  =\torseurcol{F_2}{0}{0}{0}{0}{-F_2h}{G,\left( \vect{x},\vect{y},\vect{z} \right)} $.
+\end{itemize}
+
+
+Par application du PFS on a : 
+$$ \torseurscoh_{S-\rightarrow S+} +\torseurstat{T}{F_1}{S+} +\torseurstat{T}{F_2}{S+} = \{0\} \Leftrightarrow \torseurscoh_{S+\rightarrow S-} =\torseurstat{T}{F_1}{S+} +\torseurstat{T}{F_2}{S+}  $$
+On a donc  :
+$$
+\torseurcol{N}{T_y}{T_z}{M_t}{Mf_y}{Mf_z}{G} = 
+\torseurcol{F_2}{-F_1}{0}{0}{0}{-\left(\dfrac{L}{2}-\lambda \right)F_1-F_2h}{G,\left( \vect{x},\vect{y},\vect{z} \right)}
+$$
+
+\subsubsection*{On considère le tronçon BC}
+On considère donc $\vect{AG} = \lambda \vect{x}$ avec $\lambda\in \left[\dfrac{L}{2},L\right]$.
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/exo_08_corr_02}
+\end{center}
+
+
+On isole la partie de droite, notée $+$ soumise aux actions de :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item torseur de cohésion : $\torseurscoh_{S-\rightarrow S+}$ en $G$;
+\item action mécanique en $D$ : $\torseurcol{F_2}{0}{0}{0}{0}{0}{D,\left( \vect{x},\vect{y},\vect{z} \right)}  =\torseurcol{F_2}{0}{0}{0}{0}{-F_2h}{G,\left( \vect{x},\vect{y},\vect{z} \right)} $.
+\end{itemize}
+
+
+Par application du PFS on a : 
+$$ \torseurscoh_{S-\rightarrow S+} +\torseurstat{T}{F_2}{S+} = \{0\} \Leftrightarrow \torseurscoh_{S+\rightarrow S-} =\torseurstat{T}{F_2}{S+}  $$
+On a donc  :
+$$
+\torseurcol{N}{T_y}{T_z}{M_t}{Mf_y}{Mf_z}{G} = 
+\torseurcol{F_2}{0}{0}{0}{0}{-F_2h}{G,\left( \vect{x},\vect{y},\vect{z} \right)}
+$$
+\subsubsection*{On considère le tronçon CD}
+On considère donc $\vect{AG} = \lambda \vect{x}_1-L \vect{y}_1$  avec $\lambda\in \left[0,h\right]$.
+\begin{center}
+\includegraphics[width=.45\textwidth]{images/exo_08_corr_03}
+\end{center}
+
+
+On isole la partie de droite, notée $+$ soumise aux actions de :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item torseur de cohésion : $\torseurscoh_{S-\rightarrow S+}$ en $G$;
+\item action mécanique en $D$ : $\torseurcol{0}{-F_2}{0}{0}{0}{0}{D,\left( \vect{x_1},\vect{y_1},\vect{z} \right)}  =\torseurcol{0}{-F_2}{0}{0}{0}{-F_2\left(h-\lambda\right)}{G,\left( \vect{x_1},\vect{y_1},\vect{z} \right)} $.
+\end{itemize}
+
+
+Par application du PFS on a : 
+$$ \torseurscoh_{S-\rightarrow S+} +\torseurstat{T}{F_2}{S+} = \{0\} \Leftrightarrow \torseurscoh_{S+\rightarrow S-} =+\torseurstat{T}{F_2}{S+}  $$
+On a donc  :
+$$
+\torseurcol{N}{T_y}{T_z}{M_t}{Mf_y}{Mf_z}{G,\left( \vect{x_1},\vect{y_1},\vect{z} \right)} = 
+\torseurcol{0}{-F_2}{0}{0}{0}{-F_2\left(h-\lambda\right)}{G,\left( \vect{x_1},\vect{y_1},\vect{z} \right)}
+$$
+
+
+
+\end{corrige}
+\else 
+\fi
+
+
+\subparagraph{}
+\textit{Tracer le diagramme des sollicitations.}
+
+
+
+\section*{Exercice 2}
+\setcounter{subparagraph}{0}
+On donne sur le schéma ci-dessous la modélisation d'une poutre et des efforts qui lui sont appliqués.
+\subparagraph{}
+\textit{Est-il nécessaire de déterminer les actions mécaniques en $A$ et en $B$.}
+\ifprof
+\begin{corrige}
+Si on isole la partie <<II>>, elle est soumise à l'effort $\vect{F}$ et à l'action du torseur de cohésion. On n'aura donc pas besoin de l'action dans la liaison encastrement pour pouvoir déterminer le torseur de cohésion. 
+\end{corrige}
+\else 
+\fi
+
+
+On cherche à déterminer le diagramme des sollicitations dans chacun des tronçons.
+
+\subparagraph{}
+\textit{Exprimer le torseur de cohésion dans chacun des tronçons.}
+\ifprof
+\begin{corrige}
+ ~\\
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item On isole la portion $[MB]$ (+).
+\item La portion est soumise d'une part à l'action mécanique en $B$ et d'autre part à l'action mécanique du torseur de cohésion.
+\item On a donc : 
+\end{itemize}
+$$
+\torseurscoh_{S-\rightarrow S+} +
+ \torseurcol{-F}{0}{0}{0}{0}{0}{B,\left( \vect{x},\vect{y},\vect{z} \right)} 
+ = \{0\}
+$$
+%
+%$$
+%\torseurscoh_{S+\rightarrow S-}
+%=-\torseurcol{F}{0}{0}{0}{0}{0}{G}
+%-\torseurcol{0}{-px}{0}{0}{0}{ \dfrac{px^2}{2}}{G}
+%=\torseurcol{-F}{px}{0}{0}{0}{-\dfrac{px^2}{2}}{G}
+%$$
+%car 
+$\vectm{M}{\text{Ext}}{\text{Poutre}}
+=\vectm{B}{\text{Ext}}{\text{Poutre}} + \vect{MB}  \wedge -F \vect{x} 
+=\left( -R\vect{u} + R\vect{x}\right) \wedge -F \vect{x} 
+=  - RF \sin \theta \vect{z}
+$  et $-F \vect{x}  = -F \left( \cos \theta \vect{u}-\sin \theta \vect{v} \right) $.
+
+On a donc :
+$$
+\torseurscoh_{S+\rightarrow S-} 
+= 
+ \torseurcol{-F\cos \theta }{F\sin \theta }{0}{0}{0}{ - RF \sin \theta}{M,\left( \vect{u},\vect{v},\vect{z} \right)} 
+$$
+
+\textbf{TODO : diagrammes}
+\end{corrige}
+\else 
+\fi
+
+
+%\subparagraph{}
+%\textit{Tracer les diagrammes des sollicitations.}
+%\ifprof
+%\begin{corrige}
+%\end{corrige}
+%\else 
+%\fi
+\ifprof
+\else
+\begin{center}
+\includegraphics[width=.4\textwidth]{images/exo_04}
+\end{center}
+\fi
+
+
+
+%\newpage
+
+
+
+
+
 \newpage
 
 
@@ -740,152 +920,6 @@ car $\vectm{G}{\text{Ext}}{\text{Poutre}}=\vectm{A}{\text{Ext}}{\text{Poutre}} +
 \end{center}
 \end{corrige}
 \else
-\fi
-
-\section*{Exercice 3}
-\setcounter{subparagraph}{0}
-On donne sur le schéma ci-dessous la modélisation d'une poutre et des efforts qui lui sont appliqués.
-\begin{center}
-\includegraphics[width=.45\textwidth]{images/exo_02}
-\end{center}
-
-\subparagraph{}
-\textit{Déterminer les actions mécaniques en $A$ et en $B$... et remarquer que cela peut ne servir à rien pour la suite du problème...}
-\ifprof
-\begin{corrige}
-\textit{Remarque :}
-Pour déterminer le torseur de cohésion dans ce cas il n'est pas nécessaire de déterminer les actions mécaniques dans la liaison encastrement.
-
-\begin{itemize}[label=\ding{112},font=\color{ocre}] 
-\item On isole la poutre.
-\item La poutre est soumise à une liaison encastrement en $A$ et à une action mécanique en $C$.
-\item On a donc :
-\end{itemize}
-$$
-\torseurcol{X_A}{Y_A}{Z_A}{L_A}{M_A}{N_A}{A}
-+\torseurcol{0}{0}{-F}{0}{0}{0}{C}
-=\{ 0\}
-$$
-
-$\vectm{A}{\text{Ext}}{\text{Poutre}}
-=\vectm{C}{\text{Ext}}{\text{Poutre}} + \vect{AC}\wedge -F \vect{z}  
-= \left(l\vect{x} - h\vect{z} \right) \wedge -F \vect{z}  
-= Fl\vect{y}$
-
-$$
-\torseurcol{X_A}{Y_A}{Z_A}{L_A}{M_A}{N_A}{A}
-= \torseurcol{0}{0}{F}{0}{-Fl}{0}{A}
-$$
-
-\end{corrige}
-\else 
-\fi
-
-
-On cherche à déterminer le diagramme des sollicitations dans chacun des tronçons.
-
-\subparagraph{}
-\textit{Quels tronçons peut-on considérer ?}
-\ifprof
-\begin{corrige}~\\
-\begin{minipage}[c]{.45\linewidth}
-On peut considérer les deux tronçons suivants :
-\begin{itemize}[label=\ding{112},font=\color{ocre}] 
-\item le tronçon $AB$ sur lequel $x\in[0,l]$;
-\item le tronçon $BC$ sur lequel on définit un repère local.
-\end{itemize}
-\end{minipage} \hfill
-\begin{minipage}[c]{.45\linewidth}
-\begin{center}
-\includegraphics[width=\linewidth]{images/exo_02_corr_01}
-\end{center}
-\end{minipage}
-\end{corrige}
-\else 
-\fi
-
-\subparagraph{}
-\textit{Exprimer le torseur de cohésion dans chacun des tronçons.}
-
-\ifprof
-~\\
-\begin{corrige} ~\\
-
-\begin{itemize}[label=\ding{112},font=\color{ocre}] 
-\item On isole le premier tronçon.
-\item Le tronçon est soumis d'une part à l'action mécanique en $A$ (vu qu'on l'a calculée, on va l'utilise ...) et d'autre part à l'action mécanique du torseur de cohésion.
-\item On a donc :
-\end{itemize}
-$$
-\torseurscoh_{S-\rightarrow S+} + \torseurcol{0}{0}{-F}{0}{0}{0}{C,\left( \vect{x},\vect{y},\vect{z} \right)} = \{0\}
-$$
-On a donc :
-$$
-\torseurscoh_{S+\rightarrow S-}
-=\torseurcol{0}{0}{-F}{0}{0}{0}{C,\left( \vect{x},\vect{y},\vect{z} \right)}
-$$
-
-$\vectm{G}{\text{Ext}}{\text{Poutre}}
-=\vectm{C}{\text{Ext}}{\text{Poutre}} + \vect{GC}\wedge -F \vect{z}  
-= \left( (l-x) \vect{x} - h\vect{y} \right) \wedge -F \vect{z}
-= F(l-x) \vect{y} +F h\vect{x} 
-$
-On a donc :
-$$
-\torseurscoh_{S+\rightarrow S-}
-=\torseurcol{0}{0}{-F}{Fh}{F(l-x)}{0}{G,\left( \vect{x},\vect{y},\vect{z} \right)}
-$$
-
-
-\begin{minipage}[c]{.45\linewidth}
-\begin{itemize}[label=\ding{112},font=\color{ocre}] 
-\item On isole la portion $[GC]$.
-\item Le tronçon est soumis d'une part à l'action mécanique en $C$ et d'autre part à l'action mécanique du torseur de cohésion.
-\item On a donc :
-\end{itemize}
-\end{minipage}\hfill
-\begin{minipage}[c]{.45\linewidth}
-\begin{center}
-\includegraphics[width=.8\linewidth]{images/exo_02_corr_02}
-\end{center}
-\end{minipage}
-$$
-\torseurscoh_{S-\rightarrow S+} + \torseurcol{0}{0}{-F}{0}{0}{0}{C,\left( \vect{x_1},\vect{y_1},\vect{z} \right)} = \{0\}
-$$
-On a donc :
-$$
-\torseurscoh_{S+\rightarrow S-}
-=\torseurcol{0}{0}{-F}{0}{0}{0}{C}
-$$
-
-$\vectm{G}{\text{Ext}}{\text{Poutre}}
-=\vectm{C}{\text{Ext}}{\text{Poutre}} + \vect{GC}\wedge -F \vect{z}  
-=  (h-x) \vect{x_1}  \wedge -F \vect{z}
-=  (h-x) F \vect{y_1}
-$. 
-On a donc :
-$$
-\torseurscoh_{S+\rightarrow S-}
-=\torseurcol{0}{0}{-F}{0}{(h-x) F}{0}{G,\left( \vect{x_1},\vect{y_1},\vect{z} \right)}
-%=\torseurcol{0}{0}{-F}{(h-x) F}{0}{0}{G,\left( \vect{x},\vect{y},\vect{z} \right)}
-$$
-
-
-
-\end{corrige}
-\else 
-\fi
-
-\subparagraph{}
-\textit{Tracer les diagrammes des sollicitations.}
-\ifprof
-\begin{corrige}~\\
-\begin{center}
-\includegraphics[width=.4\linewidth]{images/exo_02_corr_03}
-\end{center}
-
-\end{corrige}
-\else 
 \fi
 
 
