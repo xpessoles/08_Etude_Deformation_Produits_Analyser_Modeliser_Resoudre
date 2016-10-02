@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  29 SEP 2016 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  2 OCT 2016 22:09
 entering extended mode
 **TD_BTP.tex
 (TD_BTP.tex
@@ -2362,28 +2362,41 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 147.
+(Font)              scaled to size 7.35999pt on input line 164.
 LaTeX Font Info:    Font shape `T1/mdput/m/sl' will be
-(Font)              scaled to size 7.35999pt on input line 147.
+(Font)              scaled to size 7.35999pt on input line 164.
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <8> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 147.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 164.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 7.35999pt on input line 147.
+(Font)              scaled to size 7.35999pt on input line 164.
  [1
 
 {C:/Users/Xavier/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/f
 ig_01.png> <./images/fig_02.png> <./images/fig_03.png> <./images/corr_01.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
+File: images/corr_01.png Graphic file (type png)
+ <use images/corr_01.png>
+Package pdftex.def Info: images/corr_01.png used on input line 171.
+(pdftex.def)             Requested size: 241.84843pt x 77.26955pt.
+File: images/corr_01.png Graphic file (type png)
+ <use images/corr_01.png>
+Package pdftex.def Info: images/corr_01.png used on input line 212.
+(pdftex.def)             Requested size: 241.84843pt x 77.26955pt.
+
+<images/corr_02.png, id=34, 1096.095pt x 759.83875pt>
+File: images/corr_02.png Graphic file (type png)
+ <use images/corr_02.png>
+Package pdftex.def Info: images/corr_02.png used on input line 249.
+(pdftex.def)             Requested size: 241.84843pt x 167.652pt.
 
 <png/logo_lycee.png, id=35, 329.23pt x 265.99374pt>
 File: png/logo_lycee.png Graphic file (type png)
  <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png used on input line 147.
+Package pdftex.def Info: png/logo_lycee.png used on input line 250.
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
 LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
-(Font)              scaled to size 7.35999pt on input line 147.
+(Font)              scaled to size 7.35999pt on input line 250.
 LaTeX Font Info:    Font shape `T1/pag/m/it' in size <8> not available
-(Font)              Font shape `T1/pag/m/sl' tried instead on input line 147.
+(Font)              Font shape `T1/pag/m/sl' tried instead on input line 250.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2392,23 +2405,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2 <./png/logo_lycee.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
+File: png/logo_lycee.png Graphic file (type png)
+ <use png/logo_lycee.png>
+Package pdftex.def Info: png/logo_lycee.png used on input line 258.
+(pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 45.97325pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <12> not available
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 258.
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 11.03998pt on input line 258.
+[3 <./images/corr_02.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
  (TD_BTP.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 147.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 258.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package logreq Info: Writing requests to 'TD_BTP.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
  ) 
 Here is how much of TeX's memory you used:
- 39267 strings out of 493675
- 739543 string characters out of 3143992
- 1340821 words of memory out of 3000000
- 41856 multiletter control sequences out of 15000+200000
- 201026 words of font info for 197 fonts, out of 3000000 for 9000
+ 39282 strings out of 493675
+ 739778 string characters out of 3143992
+ 1345821 words of memory out of 3000000
+ 41866 multiletter control sequences out of 15000+200000
+ 209498 words of font info for 201 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  57i,21n,75p,10419b,1916s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Program File
@@ -2425,9 +2455,9 @@ ype1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/uto
 pia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagd8a.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagko8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on TD_BTP.pdf (2 pages, 848310 bytes).
+Output written on TD_BTP.pdf (3 pages, 869740 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 63526 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 64043 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -120,7 +120,7 @@ $$
 \subparagraph{}
 \textit{Après avoir identifier les différents tronçons à étudier, déterminer le torseur de cohésion dans le solide 1.}
 
-\textbf{On considère le tronçon $[AB]$ pour lequel $\lambda \in ]0,a[$}
+\textbf{On considère le tronçon $[OA]$ pour lequel $\lambda \in ]0,\ell_1[$}
 \begin{center}
 \includegraphics[width=.5\linewidth]{images/corr_01}
 \end{center}
@@ -128,16 +128,127 @@ $$
 \item On isole la partie $II$. 
 \item On réalise le bilan des actions mécaniques : 
 \begin{itemize}
-\item action en $\left\{ A\rightarrow 1 \right\}= \begin{Bmatrix} F_y\overrightarrow{y_s}\\
+\item action en $\left\{ A\rightarrow II \right\}= \begin{Bmatrix} F_y\overrightarrow{y_s}\\
 \overrightarrow{0}\end{Bmatrix}_A = \begin{Bmatrix} F_y\overrightarrow{y_s}\\
- F_A\left( \ell_1 - \lambda \right)\overrightarrow{y_s}\end{Bmatrix}_G$;
-\item action en $\left\{ B\rightarrow 1 \right\}= \begin{Bmatrix} F_B\overrightarrow{y_s}\\
-\overrightarrow{0}\end{Bmatrix}_A = \begin{Bmatrix} F_A\overrightarrow{y_s}\\
- F_A\left( \ell_1 - \lambda \right)\overrightarrow{y_s}\end{Bmatrix}_G$;
+ F_y\left( \ell_1 - \lambda \right)\overrightarrow{z_s}\end{Bmatrix}_G$;
+
+\item action en $\left\{ B\rightarrow II \right\}= \begin{Bmatrix} -F_x\overrightarrow{x_s}-F_y\overrightarrow{y_s}\\
+\overrightarrow{0}\end{Bmatrix}_B= \begin{Bmatrix}-F_x\overrightarrow{x_s}-F_y\overrightarrow{y_s}\\
+ -F_y\left( \ell_2 - \lambda \right)\overrightarrow{z_s}\end{Bmatrix}_G$;
+
+\item action en $\left\{ C \rightarrow II \right\}= \begin{Bmatrix} F_x\overrightarrow{x_s}\\
+C_t\overrightarrow{x_s}\end{Bmatrix}_B= \begin{Bmatrix} F_x\overrightarrow{x_s}\\
+C_t\overrightarrow{x_s}\end{Bmatrix}_G$;
+\item $\left\{ \mathcal{T}_{\text{coh}} \left(I \rightarrow II\right) \right\}$
 \end{itemize}
+\item On applique le PFS à la partie $II$ et on a : 
+$$
+\left\{ A\rightarrow II \right\} + \left\{ B\rightarrow II \right\} + \left\{ C\rightarrow II \right\}
++\left\{ \mathcal{T}_{\text{coh}} \left(I \rightarrow II\right) \right\} = \{0\}
+\Leftrightarrow
+\left\{ \mathcal{T}_{\text{coh}} \left(II \rightarrow I\right) \right\}  = \left\{ A\rightarrow II \right\} + \left\{ B\rightarrow II \right\} + \left\{ C\rightarrow II \right\}
+$$ 
+Ainsi, 
+$$
+\begin{Bmatrix} 
+N & M_t \\
+T_y & M_{fy} \\
+T_z & M_{fz} 
+\end{Bmatrix}_G
+=
+\begin{Bmatrix} 
+0 & C_t \\
+0& 0 \\
+0 & F_y\left( \ell_1 - \lambda \right) -F_y\left( \ell_2 - \lambda \right) 
+\end{Bmatrix}_G
+$$
 \end{itemize}
 
-\subparagraph{Tracer les diagrammes des sollicitations associés à chacune des composantes du torseur de cohésion.}
+
+
+\textbf{On considère le tronçon $[AB]$ pour lequel $\lambda \in ]\ell_1,\ell_2[$}
+\begin{center}
+\includegraphics[width=.5\linewidth]{images/corr_01}
+\end{center}
+\begin{itemize}
+\item On isole la partie $II$. 
+\item On réalise le bilan des actions mécaniques : 
+\begin{itemize}
+\item action en $\left\{ B\rightarrow II \right\}= \begin{Bmatrix} -F_x\overrightarrow{x_s}-F_y\overrightarrow{y_s}\\
+\overrightarrow{0}\end{Bmatrix}_B= \begin{Bmatrix}-F_x\overrightarrow{x_s}-F_y\overrightarrow{y_s}\\
+ -F_y\left( \ell_2 - \lambda \right)\overrightarrow{z_s}\end{Bmatrix}_G$;
+
+\item action en $\left\{ C \rightarrow II \right\}= \begin{Bmatrix} F_x\overrightarrow{x_s}\\
+C_t\overrightarrow{x_s}\end{Bmatrix}_B= \begin{Bmatrix} F_x\overrightarrow{x_s}\\
+C_t\overrightarrow{x_s}\end{Bmatrix}_G$;
+\item $\left\{ \mathcal{T}_{\text{coh}} \left(I \rightarrow II\right) \right\}$
+\end{itemize}
+\item On applique le PFS à la partie $II$ et on a : 
+$$
+\left\{ B\rightarrow II \right\} + \left\{ C\rightarrow II \right\}
++\left\{ \mathcal{T}_{\text{coh}} \left(I \rightarrow II\right) \right\} = \{0\}
+\Leftrightarrow
+\left\{ \mathcal{T}_{\text{coh}} \left(II \rightarrow I\right) \right\}  = \left\{ B\rightarrow II \right\} + \left\{ C\rightarrow II \right\}
+$$ 
+Ainsi, 
+$$
+\begin{Bmatrix} 
+N & M_t \\
+T_y & M_{fy} \\
+T_z & M_{fz} 
+\end{Bmatrix}_G
+=
+\begin{Bmatrix} 
+0 & C_t \\
+ -F_y& 0 \\
+0 &  -F_y\left( \ell_2 - \lambda \right) 
+\end{Bmatrix}_G
+$$
+\end{itemize}
+
+
+\textbf{On considère le tronçon $[BC]$ pour lequel $\lambda \in ]\ell_2,\ell_3[$}
+\begin{center}
+\includegraphics[width=.5\linewidth]{images/corr_01}
+\end{center}
+\begin{itemize}
+\item On isole la partie $II$. 
+\item On réalise le bilan des actions mécaniques : 
+\begin{itemize}
+\item action en $\left\{ C \rightarrow II \right\}= \begin{Bmatrix} F_x\overrightarrow{x_s}\\
+C_t\overrightarrow{x_s}\end{Bmatrix}_B= \begin{Bmatrix} F_x\overrightarrow{x_s}\\
+C_t\overrightarrow{x_s}\end{Bmatrix}_G$;
+\item $\left\{ \mathcal{T}_{\text{coh}} \left(I \rightarrow II\right) \right\}$
+\end{itemize}
+\item On applique le PFS à la partie $II$ et on a : 
+$$
+\left\{ C\rightarrow II \right\}
++\left\{ \mathcal{T}_{\text{coh}} \left(I \rightarrow II\right) \right\} = \{0\}
+\Leftrightarrow
+\left\{ \mathcal{T}_{\text{coh}} \left(II \rightarrow I\right) \right\}  =  \left\{ C\rightarrow II \right\}
+$$ 
+Ainsi, 
+$$
+\begin{Bmatrix} 
+N & M_t \\
+T_y & M_{fy} \\
+T_z & M_{fz} 
+\end{Bmatrix}_G
+=
+\begin{Bmatrix} 
+F_x& C_t \\
+0& 0 \\
+0 &  0
+\end{Bmatrix}_G
+$$
+\end{itemize}
+
+
+\subparagraph{}\textit{Tracer les diagrammes des sollicitations associés à chacune des composantes du torseur de cohésion.}
+\begin{center}
+\includegraphics[width=.5\linewidth]{images/corr_02}
+\end{center}
+
 
 \ifprof
 \else
