@@ -246,10 +246,17 @@ $$
 
 \subparagraph{}\textit{Tracer les diagrammes des sollicitations associés à chacune des composantes du torseur de cohésion.}
 \begin{center}
-\includegraphics[width=.5\linewidth]{images/corr_02}
+\includegraphics[width=.95\linewidth]{images/corr_02}
 \end{center}
 
-
+\subparagraph{}\textit{En tenant compte des sollicitations auxquelles l'arbre est soumis, déterminer son diamètre.}
+\begin{itemize}
+\item En tenant compte de la sollicitation de torsion, on a : $ \tau = \dfrac{M_t}{I_{0}}r < $ 
+\item En tenant compte de la sollicitation de traction, on a : $\sigma=\dfrac{F_x}{S}<\dfrac{\sigma_E}{3}\Rightarrow \dfrac{F_x}{\dfrac{\pi d^2}{4}}<\dfrac{\sigma_E}{3} 
+\Rightarrow \dfrac{3 F_x}{\sigma_E}< \dfrac{\pi d^2}{4}
+\Rightarrow d > \sqrt{\dfrac{12 F_x}{\pi \sigma_E}}$. 
+\item En tenant compte de la sollicitation de flexion, on a : 
+\end{itemize}
 \ifprof
 \else
 \end{multicols}
