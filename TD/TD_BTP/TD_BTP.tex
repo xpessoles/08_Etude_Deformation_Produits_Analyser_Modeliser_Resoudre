@@ -5,7 +5,7 @@
     
 \input{style/new_style}
 \input{style/macros_SII}
-
+\usepackage{siunitx}
 \usepackage{multicol}
 \usepackage{style/schemabloc}
 \fichetrue
@@ -249,19 +249,72 @@ $$
 \includegraphics[width=.95\linewidth]{images/corr_02}
 \end{center}
 
-\subparagraph{}\textit{En tenant compte des sollicitations auxquelles l'arbre est soumis, déterminer son diamètre.}
+\subparagraph{}\textit{En tenant compte uniquement des contraintes normales, donner la contrainte sous forme vectorielle, déterminer le diamètre minimal de l'arbre dans chacun
+des tronçons puis tracer le champ des contraintes dans chacun d'entre eux.}
+
 \begin{itemize}
-\item En tenant compte de la sollicitation de torsion, on a : $ \tau = \dfrac{M_t}{I_{0}}r < $ 
-\item En tenant compte de la sollicitation de traction, on a : $\sigma=\dfrac{F_x}{S}<\dfrac{\sigma_E}{3}\Rightarrow \dfrac{F_x}{\dfrac{\pi d^2}{4}}<\dfrac{\sigma_E}{3} 
-\Rightarrow \dfrac{3 F_x}{\sigma_E}< \dfrac{\pi d^2}{4}
-\Rightarrow d > \sqrt{\dfrac{12 F_x}{\pi \sigma_E}}$. 
-\item En tenant compte de la sollicitation de flexion, on a : 
+\item Sur le tronçon $]OA[$ il n'y a aucune contrainte normale. 
+\item Sur le tronçon $]AB[$ la contrainte normale due au moment fléchissant s'exprime par  $\overrightarrow{\sigma_2}= -\dfrac{Mfz}{I_{Gz}}y \overrightarrow{x_s}= \dfrac{F_y\left( \ell_2 - \lambda \right)}{I_{Gz}}y \overrightarrow{x_s} $ ($F_y$ étant positif et $\ell_2$ supérieur à $\lambda$ on a la partie supérieure de la poutre en traction et la partie inférieure en compression). Au maximum, la contrainte de traction est donc de $\sigma_{\text{2,max}}=\dfrac{F_y\left( \ell_2 - \ell_1 \right)}{\dfrac{\pi D^4}{64}}\dfrac{D}{2}=32\dfrac{F_y\left( \ell_2 - \ell_1 \right)}{\pi D^3}$. $\sigma_{\text{2,max}} < \dfrac{R_e}{2} \Rightarrow 32\dfrac{F_y\left( \ell_2 - \ell_1 \right)}{\pi D^3} < \dfrac{R_e}{2} \Rightarrow D > \sqrt[3]{\dfrac{64 F_y\left( \ell_2 - \ell_1 \right)}{\pi R_e}}$. \textit{AN: $D= \SI{107}{mm}$.}
+\item Sur le tronçon $]BC[$ la contrainte normale est due à la sollicitation de traction : $\overrightarrow{\sigma_{\text{3}}} = \dfrac{N}{S}\overrightarrow{x_s}$. La contrainte étant uniforme dans la section, on a donc 
+$\sigma_{\text{3,max}} < \dfrac{R_e}{2} \Leftrightarrow \dfrac{N}{S} < \dfrac{R_e}{2} \Leftrightarrow \dfrac{F_x}{\dfrac{\pi D^2 }{4}} < \dfrac{R_e}{2}
+\Leftrightarrow  D > \sqrt{\dfrac{8 F_x}{R_e}} $. \textit{AN: $D= \SI{33}{mm}$.}
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=.5\linewidth]{images/corr_03}
+\end{center} 
+
+\subparagraph{}\textit{Faire de même en ne tenant compte que des contraintes de cisaillement.}
+
+
+
+\begin{itemize}
+\item L'ensemble de la poutre étant en torsion, on a : $ \overrightarrow{\tau_t}=\dfrac{M_t}{I_{0}}\rho \overrightarrow{e_{\theta}}.$ La contrainte est maximale lorsque le rayon est maximal. Ainsi, $ \tau_{t,\text{max}} = \dfrac{M_t}{I_{0}}\dfrac{D}{2} <\dfrac{R_e}{2}\dfrac{1}{2} \Leftrightarrow \dfrac{M_t}{\dfrac{\pi D^4}{32}}\dfrac{D}{2} <\dfrac{R_e}{4} \Leftrightarrow D > \sqrt[3]{\dfrac{64 M_t}{\pi R_e}} $. 
+\textit{AN: $D= \SI{52}{mm}$.}
+\item Le tronçon $]AB[$ étant soumis à de la flexion simple, on a donc du cisaillement : $\overrightarrow{\tau_{2}} = \dfrac{T_y}{S}\overrightarrow{y_s}$. 
+L'effort tranchant étant uniforme, on a $\tau_{\text{max},2} < \dfrac{R_e}{2}\dfrac{1}{2} \Leftrightarrow  \dfrac{F_y}{\dfrac{\pi D^2}{4}}< \dfrac{R_e}{4} \Leftrightarrow D > \sqrt{\dfrac{8 F_y}{R_e \pi }}$. \textit{AN: $D= \SI{23}{mm}$.}
 \end{itemize}
 \ifprof
 \else
 \end{multicols}
 \fi
 
+
+\begin{center}
+\includegraphics[width=.5\linewidth]{images/corr_04}
+\end{center}
+
+\subparagraph{}\textit{N'étant pas possible de sommer des contraintes normales et des contraintes de cisaillement, on peut utiliser le critère de von Mises : $\sigma_{\text{vm}}=\sqrt{\sigma_{\text{max}}^2+3\tau_{\text{max}}^2}\leq R_e$. Exprimer $\sigma_{\text{vm}}$ en fonction de $\rho$ et $\theta$. La courbe suivante représente la fonction $\dfrac{R_e}{2}-\sigma_{\text{vm}}$ pour $\theta$ compris entre et $\left[-\pi,\pi\right]$ pour différents diamètres. Proposer un diamètre de l'arbre pour le tronçon $]AB[$.}
+
+Calcul de la contrainte de torsion : 
+$\overrightarrow{\tau}=\dfrac{M_t}{I_{0}}\rho \overrightarrow{e_{\theta}} - \dfrac{F_y}{\pi \rho^2} \vect{y_s}
+= \dfrac{M_t}{I_{0}}\rho \left( \cos\theta \overrightarrow{y_{s}}-\sin\theta \overrightarrow{z_{s}}\right) - \dfrac{F_y}{\pi \rho^2} \vect{y_s}$. 
+On a alors $||\overrightarrow{\tau}||^2 = \left(\dfrac{M_t}{I_{0}}\rho  \cos\theta -  \dfrac{F_y}{\pi \rho^2} \right)^2 +   \left(\dfrac{M_t}{I_{0}}\rho  \sin\theta  \right)^2$. 
+En conséquences, 
+$\sigma_{\text{vm}}^2\left( \rho,\theta\right)=\left( \dfrac{4 F_y\left( \ell_2 - \ell_1 \right)}{\pi \rho^3} \right)^2 + 3 \left(\dfrac{M_t}{I_{0}}\rho  \cos\theta -  \dfrac{F_y}{\pi \rho^2} \right)^2 +   \left(\dfrac{M_t}{I_{0}}\rho  \sin\theta  \right)^2$.
+
+On cherche donc $\rho$ tel que $\dfrac{R_e}{2}-\sigma_{\text{vm}}>0$.
+
+%Sur le tronçon $]AB[$, pour un point appartenant à l'extérieur de l'arbre, situé sur l'axe $\left(O,\overrightarrow{y_s}\right)$, les contraintes normales et tangentielles sont maximales. En tenant compte du coefficient de sécurité, on a donc :
+%$\sqrt{\sigma_{\text{max}}^2+3\tau_{\text{max}}^2}\leq \dfrac{R_e}{2} 
+%\leftrightarrow
+%\left( \dfrac{32F_y\left( \ell_2 - \ell_1 \right)}{\pi D^3} \right)^2+3\left( \right)^2\leq \dfrac{R_e^2}{4} 
+%$
+
+
+
+\begin{center}
+\includegraphics[width=.5\linewidth]{images/untitled}
+\end{center}
+
+\subparagraph{}\textit{En conservant les dimensions précédentes et en considérant une phase de vie où l'arbre n'est soumis que de la torsion, déterminer le rayon de raccordement pour que le coefficient de concentration de contrainte soit inférieur à 1,5.}
+
+\begin{center}
+\includegraphics[width=.5\linewidth]{images/concentration_contrainte_torsion}
+\end{center}
+
+
+\subparagraph{}\textit{Proposer une géométrie de l'arbre.}
 \end{document}
 
 

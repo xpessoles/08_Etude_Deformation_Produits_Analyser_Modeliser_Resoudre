@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  2 OCT 2016 22:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.16)  24 OCT 2016 20:06
 entering extended mode
 **TD_BTP.tex
 (TD_BTP.tex
@@ -1848,7 +1848,181 @@ File: lstlang2.sty 2015/06/04 1.6 listings language file
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2015/06/04 1.6 listings language file
 ))
-(style/macros_SII.tex) (style/schemabloc.sty
+(style/macros_SII.tex)
+("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx.sty"
+Package: siunitx 2015/06/25 v2.6g A comprehensive (SI) units package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2015/06/15 v5630 LaTeX2e option processing using LaTeX3 keys
+)
+Variant \tl_if_blank:VTF already defined; not changing it on line 50
+\l__siunitx_tmp_box=\box96
+\l__siunitx_tmp_dim=\dimen268
+\l__siunitx_tmp_int=\count371
+Variant \prop_get:NVNT already defined; not changing it on line 380
+Variant \prop_get:NVNF already defined; not changing it on line 381
+Variant \prop_get:NVNTF already defined; not changing it on line 382
+\l__siunitx_number_mantissa_length_int=\count372
+\l__siunitx_number_uncert_length_int=\count373
+\l__siunitx_round_int=\count374
+\l__siunitx_process_decimal_int=\count375
+\l__siunitx_process_uncertainty_int=\count376
+\l__siunitx_process_fixed_int=\count377
+\l__siunitx_process_integer_min_int=\count378
+\l__siunitx_process_precision_int=\count379
+\l__siunitx_group_min_int=\count380
+\l__siunitx_angle_marker_box=\box97
+\l__siunitx_angle_unit_box=\box98
+\l__siunitx_angle_marker_dim=\dimen269
+\l__siunitx_angle_unit_dim=\dimen270
+\l__siunitx_unit_int=\count381
+\l__siunitx_unit_denominator_int=\count382
+\l__siunitx_unit_numerator_int=\count383
+\l__siunitx_unit_prefix_int=\count384
+\l__siunitx_unit_prefix_base_int=\count385
+\l__siunitx_unit_prefix_gram_int=\count386
+\l__siunitx_number_product_int=\count387
+\c__siunitx_one_fill_skip=\skip178
+\l__siunitx_table_unit_align_skip=\skip179
+\l__siunitx_table_exponent_dim=\dimen271
+\l__siunitx_table_integer_dim=\dimen272
+\l__siunitx_table_mantissa_dim=\dimen273
+\l__siunitx_table_marker_dim=\dimen274
+\l__siunitx_table_result_dim=\dimen275
+\l__siunitx_table_uncert_dim=\dimen276
+\l__siunitx_table_fill_pre_dim=\dimen277
+\l__siunitx_table_fill_post_dim=\dimen278
+\l__siunitx_table_fill_mid_dim=\dimen279
+\l__siunitx_table_pre_box=\box99
+\l__siunitx_table_post_box=\box100
+\l__siunitx_table_mantissa_box=\box101
+\l__siunitx_table_result_box=\box102
+\l__siunitx_table_number_align_skip=\skip180
+\l__siunitx_table_text_align_skip=\skip181
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7184.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7187.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7190.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7193.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7196.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7199.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7202.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7217.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7225.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7233.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7241.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7252.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7263.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7274.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7277.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7289.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7300.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7347.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
+. 7349.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7351.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7353.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
+. 7355.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7356.
+.................................................
+\g__file_internal_ior=\read3
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator.sty"
+Package: translator 2010/06/12 ver 1.10
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator-langu
+age-mappings.tex"))) (style/schemabloc.sty
 
 LaTeX Warning: You have requested package `style/schemabloc',
                but the package provides `schemabloc'.
@@ -1904,26 +2078,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 (C:\Enseignement\Livre_Exo_Vuibert\Installation\TIKZ\texmf\tex\generic\pgf\libr
 aries\shapes\pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.0 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box96
-\pgfnodeparttwobox=\box97
-\pgfnodepartthreebox=\box98
-\pgfnodepartfourbox=\box99
-\pgfnodeparttwentybox=\box100
-\pgfnodepartnineteenbox=\box101
-\pgfnodeparteighteenbox=\box102
-\pgfnodepartseventeenbox=\box103
-\pgfnodepartsixteenbox=\box104
-\pgfnodepartfifteenbox=\box105
-\pgfnodepartfourteenbox=\box106
-\pgfnodepartthirteenbox=\box107
-\pgfnodeparttwelvebox=\box108
-\pgfnodepartelevenbox=\box109
-\pgfnodeparttenbox=\box110
-\pgfnodepartninebox=\box111
-\pgfnodeparteightbox=\box112
-\pgfnodepartsevenbox=\box113
-\pgfnodepartsixbox=\box114
-\pgfnodepartfivebox=\box115
+\pgfnodepartlowerbox=\box103
+\pgfnodeparttwobox=\box104
+\pgfnodepartthreebox=\box105
+\pgfnodepartfourbox=\box106
+\pgfnodeparttwentybox=\box107
+\pgfnodepartnineteenbox=\box108
+\pgfnodeparteighteenbox=\box109
+\pgfnodepartseventeenbox=\box110
+\pgfnodepartsixteenbox=\box111
+\pgfnodepartfifteenbox=\box112
+\pgfnodepartfourteenbox=\box113
+\pgfnodepartthirteenbox=\box114
+\pgfnodeparttwelvebox=\box115
+\pgfnodepartelevenbox=\box116
+\pgfnodeparttenbox=\box117
+\pgfnodepartninebox=\box118
+\pgfnodeparteightbox=\box119
+\pgfnodepartsevenbox=\box120
+\pgfnodepartsixbox=\box121
+\pgfnodepartfivebox=\box122
 )))
 (C:\Enseignement\Livre_Exo_Vuibert\Installation\TIKZ\texmf\tex\generic\pgf\fron
 tendlayer\tikz\libraries\tikzlibraryarrows.code.tex
@@ -1932,7 +2106,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 (C:\Enseignement\Livre_Exo_Vuibert\Installation\TIKZ\texmf\tex\generic\pgf\libr
 aries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen268
+\arrowsize=\dimen280
 )))
 Package biblatex Info: Trying to load language 'french'...
 Package biblatex Info: ... file 'french.lbx' found.
@@ -1944,8 +2118,8 @@ File: french.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count371
-\@quotereset=\count372
+\@quotelevel=\count388
+\@quotereset=\count389
 (TD_BTP.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
 LaTeX Font Info:    ... okay on input line 72.
@@ -1983,7 +2157,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 72.
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 72.
-\AtBeginShipoutBox=\box116
+\AtBeginShipoutBox=\box123
 Package hyperref Info: Link coloring OFF on input line 72.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
@@ -1992,7 +2166,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count373
+\c@section@level=\count390
 )
 LaTeX Info: Redefining \ref on input line 72.
 LaTeX Info: Redefining \pageref on input line 72.
@@ -2034,16 +2208,16 @@ LaTeX Info: Redefining \nameref on input line 72.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count374
-\scratchdimen=\dimen269
-\scratchbox=\box117
-\nofMPsegments=\count375
-\nofMParguments=\count376
+\scratchcounter=\count391
+\scratchdimen=\dimen281
+\scratchbox=\box124
+\nofMPsegments=\count392
+\nofMParguments=\count393
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count377
-\MPscratchDim=\dimen270
-\MPnumerator=\count378
-\makeMPintoPDFobject=\count379
+\MPscratchCnt=\count394
+\MPscratchDim=\dimen282
+\MPnumerator=\count395
+\makeMPintoPDFobject=\count396
 \everyMPtoPDFconversion=\toks48
 ) ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \degres on input line 72.
@@ -2072,7 +2246,116 @@ Package biblatex Info: ... file 'TD_BTP.bbl' not found.
 No file TD_BTP.bbl.
 Package biblatex Info: Reference section=0 on input line 72.
 Package biblatex Info: Reference segment=0 on input line 72.
-\c@lstlisting=\count380
+\c@lstlisting=\count397
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
+-basic-dictionary\translator-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
+File: siunitx-abbreviations.cfg 2015/06/25 v2.6g siunitx: Abbreviated units
+)
+\c__siunitx_mathsf_int=\count398
+Package microtype Info: Loading generic settings for font family
+(microtype)             `mdput' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 72.
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 4.59999pt on input line 72.
+LaTeX Font Info:    Try loading font information for OML+mdput on input line 72
+.
+
+(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
+design\mdput\omlmdput.fd
+File: omlmdput.fd 2006/01/29 Fontinst v1.928 font definitions for OML/mdput.
+)
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 9.19998pt on input line 72.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 6.43999pt on input line 72.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 4.59999pt on input line 72.
+LaTeX Font Info:    Try loading font information for OMS+mdput on input line 72
+.
+
+(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
+design\mdput\omsmdput.fd
+File: omsmdput.fd 2006/01/29 Fontinst v1.928 font definitions for OMS/mdput.
+)
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 72.
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 72.
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 4.59999pt on input line 72.
+LaTeX Font Info:    Try loading font information for OMX+mdput on input line 72
+.
+
+(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
+design\mdput\omxmdput.fd
+File: omxmdput.fd 2006/01/29 Fontinst v1.928 font definitions for OMX/mdput.
+)
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 72.
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 72.
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 4.59999pt on input line 72.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 72.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 72.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 4.59999pt on input line 72.
+LaTeX Font Info:    Try loading font information for MDA+mdput on input line 72
+.
+
+(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
+design\mdput\mdamdput.fd
+File: mdamdput.fd 2006/01/29 Fontinst v1.928 font definitions for MDA/mdput.
+)
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 72.
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 72.
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 4.59999pt on input line 72.
+LaTeX Font Info:    Try loading font information for MDB+mdput on input line 72
+.
+
+(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
+design\mdput\mdbmdput.fd
+File: mdbmdput.fd 2006/01/29 Fontinst v1.928 font definitions for MDB/mdput.
+)
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 72.
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 72.
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 4.59999pt on input line 72.
+LaTeX Font Info:    Try loading font information for OT1+pag on input line 72.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pag.fd"
+File: ot1pag.fd 2001/06/04 font definitions for OT1/pag.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pag' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+\c__siunitx_mathtt_int=\count399
+LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
+(Font)              scaled to size 10.46997pt on input line 72.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
+(Font)              scaled to size 7.32898pt on input line 72.
+LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
+(Font)              scaled to size 5.23499pt on input line 72.
+
 (style/new_pagegarde.tex
 LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
 (Font)              scaled to size 19.08076pt on input line 156.
@@ -2104,79 +2387,46 @@ Package pdftex.def Info: images/fig_01.png used on input line 162.
 (pdftex.def)             Requested size: 113.81145pt x 96.48235pt.
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
 (Font)              scaled to size 19.08076pt on input line 166.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `mdput' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
 (Font)              scaled to size 11.03998pt on input line 166.
-LaTeX Font Info:    Try loading font information for OML+mdput on input line 16
-6.
-
-(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
-design\mdput\omlmdput.fd
-File: omlmdput.fd 2006/01/29 Fontinst v1.928 font definitions for OML/mdput.
-)
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 19.08076pt on input line 166.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 13.24796pt on input line 166.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 11.03998pt on input line 166.
-LaTeX Font Info:    Try loading font information for OMS+mdput on input line 16
-6.
-
-(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
-design\mdput\omsmdput.fd
-File: omsmdput.fd 2006/01/29 Fontinst v1.928 font definitions for OMS/mdput.
-)
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
 (Font)              scaled to size 19.08076pt on input line 166.
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 166.
 LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
 (Font)              scaled to size 11.03998pt on input line 166.
-LaTeX Font Info:    Try loading font information for OMX+mdput on input line 16
-6.
-
-(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
-design\mdput\omxmdput.fd
-File: omxmdput.fd 2006/01/29 Fontinst v1.928 font definitions for OMX/mdput.
-)
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
 (Font)              scaled to size 19.08076pt on input line 166.
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 166.
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
 (Font)              scaled to size 11.03998pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
+(Font)              scaled to size 21.71472pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
+(Font)              scaled to size 15.07674pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
+(Font)              scaled to size 12.56396pt on input line 166.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
 (Font)              scaled to size 19.08076pt on input line 166.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 166.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
 (Font)              scaled to size 11.03998pt on input line 166.
-LaTeX Font Info:    Try loading font information for MDA+mdput on input line 16
-6.
-
-(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
-design\mdput\mdamdput.fd
-File: mdamdput.fd 2006/01/29 Fontinst v1.928 font definitions for MDA/mdput.
-)
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
 (Font)              scaled to size 19.08076pt on input line 166.
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 166.
 LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
 (Font)              scaled to size 11.03998pt on input line 166.
-LaTeX Font Info:    Try loading font information for MDB+mdput on input line 16
-6.
-
-(C:\Enseignement\Livre_Exo_Vuibert\Installation\MATHDESIGN\texmf\tex\latex\math
-design\mdput\mdbmdput.fd
-File: mdbmdput.fd 2006/01/29 Fontinst v1.928 font definitions for MDB/mdput.
-)
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
 (Font)              scaled to size 19.08076pt on input line 166.
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
@@ -2263,6 +2513,10 @@ LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
 (Font)              scaled to size 7.35999pt on input line 225.
 LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 225.
+LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
+(Font)              scaled to size 8.37598pt on input line 225.
+LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
+(Font)              scaled to size 6.28198pt on input line 225.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
 (Font)              scaled to size 7.35999pt on input line 225.
 LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
@@ -2276,46 +2530,6 @@ LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
 LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 225.
 )
-LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 90.
-LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 90.
-LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 9.19998pt on input line 90.
-LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 6.43999pt on input line 90.
-LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 4.59999pt on input line 90.
-LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 90.
-LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 90.
-LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 90.
-LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 90.
-LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 90.
-LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 90.
-LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 90.
-LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 90.
-LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 90.
-LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 90.
-LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 90.
-LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 90.
-LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 90.
-LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 90.
-LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
-(Font)              scaled to size 4.59999pt on input line 90.
 File: images/fig_01.png Graphic file (type png)
  <use images/fig_01.png>
 Package pdftex.def Info: images/fig_01.png used on input line 91.
@@ -2405,9 +2619,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2 <./png/logo_lycee.png>]
+LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
+(Font)              scaled to size 6.43999pt on input line 257.
+LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
+(Font)              scaled to size 4.59999pt on input line 257.
+
+<images/corr_03.png, id=42, 703.62875pt x 411.5375pt>
+File: images/corr_03.png Graphic file (type png)
+ <use images/corr_03.png>
+Package pdftex.def Info: images/corr_03.png used on input line 264.
+(pdftex.def)             Requested size: 241.84843pt x 141.44682pt.
 File: png/logo_lycee.png Graphic file (type png)
- <use png/logo_lycee.png>
-Package pdftex.def Info: png/logo_lycee.png used on input line 265.
+
+<use png/logo_lycee.png>
+Package pdftex.def Info: png/logo_lycee.png used on input line 272.
 (pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
 
 
@@ -2417,28 +2642,73 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 LaTeX Font Info:    Font shape `T1/mdput/bx/n' in size <12> not available
-(Font)              Font shape `T1/mdput/b/n' tried instead on input line 265.
+(Font)              Font shape `T1/mdput/b/n' tried instead on input line 272.
 LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
-(Font)              scaled to size 11.03998pt on input line 265.
-[3 <./images/corr_02.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+(Font)              scaled to size 11.03998pt on input line 272.
+[3 <./images/corr_02.png> <./images/corr_03.png>]
+<images/corr_04.png, id=51, 696.6025pt x 423.5825pt>
+File: images/corr_04.png Graphic file (type png)
+ <use images/corr_04.png>
+Package pdftex.def Info: images/corr_04.png used on input line 284.
+(pdftex.def)             Requested size: 241.84843pt x 147.06038pt.
+
+<images/untitled.png, id=52, 544.28343pt x 316.18124pt>
+File: images/untitled.png Graphic file (type png)
+
+<use images/untitled.png>
+Package pdftex.def Info: images/untitled.png used on input line 307.
+(pdftex.def)             Requested size: 241.84843pt x 140.49034pt.
+
+<images/concentration_contrainte_torsion.png, id=53, 1027.84pt x 1108.14pt>
+File: images/concentration_contrainte_torsion.png Graphic file (type png)
+
+<use images/concentration_contrainte_torsion.png>
+Package pdftex.def Info: images/concentration_contrainte_torsion.png used on in
+put line 313.
+(pdftex.def)             Requested size: 241.84843pt x 260.7342pt.
+File: png/logo_lycee.png Graphic file (type png)
+ <use png/logo_lycee.png>
+Package pdftex.def Info: png/logo_lycee.png used on input line 314.
+(pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 45.97325pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./images/corr_04.png> <./images/untitled.png (PNG copy)>]
+File: png/logo_lycee.png Graphic file (type png)
+
+<use png/logo_lycee.png>
+Package pdftex.def Info: png/logo_lycee.png used on input line 318.
+(pdftex.def)             Requested size: 56.9055pt x 45.97325pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 45.97325pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./images/concentration_contrainte_torsion.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
  (TD_BTP.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 318.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package logreq Info: Writing requests to 'TD_BTP.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
  ) 
 Here is how much of TeX's memory you used:
- 39283 strings out of 493675
- 739800 string characters out of 3143992
- 1345821 words of memory out of 3000000
- 41866 multiletter control sequences out of 15000+200000
- 209498 words of font info for 201 fonts, out of 3000000 for 9000
+ 41925 strings out of 493675
+ 818147 string characters out of 3143992
+ 1393176 words of memory out of 3000000
+ 44416 multiletter control sequences out of 15000+200000
+ 234958 words of font info for 258 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  57i,21n,75p,10419b,1916s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Program File
@@ -2455,9 +2725,9 @@ ype1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/uto
 pia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagd8a.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/avantgar/uagko8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on TD_BTP.pdf (3 pages, 872713 bytes).
+Output written on TD_BTP.pdf (5 pages, 1081880 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 64043 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 77887 words of extra memory for PDF output out of 89155 (max. 10000000)
 
